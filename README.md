@@ -1,5 +1,6 @@
 <h1 align="center">Hi 👋, I'm Hasan AlDoy</h1>
-<h3 align="center">a royale penguin 🐧 wondering the Arabian Desert, born in [R.A.K.](https://visitrasalkhaimah.com/) raised in the greatest Island [Kingdom of Bahrain](https://bahrain.com)</h3>
+<h3 align="center">a royale penguin 🐧 wondering the Arabian Desert</h3>
+- Born in [R.A.K.](https://visitrasalkhaimah.com/) raised in the greatest Island [Kingdom of Bahrain](https://bahrain.com)
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=aldoyh&label=Profile%20views&color=0e75b6&style=flat" alt="aldoyh" /> </p>
 
