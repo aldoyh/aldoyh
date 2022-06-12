@@ -1,8 +1,7 @@
 <h1 align="center">Hi 👋, I'm Hasan AlDoy</h1>
 <h3 align="center">a royale penguin 🐧 wondering the Arabian Desert</h3>
-- Born in [R.A.K.](https://visitrasalkhaimah.com/) raised in the greatest Island [Kingdom of Bahrain](https://bahrain.com)
 
-<p align="left"> <img src="https://komarev.com/ghpvc/?username=aldoyh&label=Profile%20views&color=0e75b6&style=flat" alt="aldoyh" /> </p>
+- Born in [R.A.K.](https://visitrasalkhaimah.com) raised in the greatest Island [Kingdom of Bahrain](https://bahrain.com)
 
 - 🔭 I’m currently working as [a Senior Broadcast Engineer in Bahrain TV since 2001](https://live.bh) & Virtual Director of [VG55](https://www.youtube.com/channel/UCzXURHgFJuC0QpuFYOHRHeg) & AlSarya TV Show as Broadcast Game Designer + Animator + Lead Developer for [alsarya.tv](https://alsarya.tv) •• also have streamed it [live](https://youtube.com/playlist?list=PLjaXnvdACZifh6jEW0fL5UwVT7WcMcJVa) 📺 📡 🛰 myself to showcase how a one-man show supposed to work!™ (May 2022)
 
@@ -20,6 +19,7 @@
 
 <p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=aldoyh&show_icons=true&locale=en" alt="aldoyh" /></p>
 
+<p align="left"> <img src="https://komarev.com/ghpvc/?username=aldoyh&label=Profile%20views&color=0e75b6&style=flat" alt="aldoyh" /> </p>
 
 <!--
 **aldoyh/aldoyh** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
