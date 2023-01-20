@@ -11,8 +11,18 @@ jobs:
     name: Update todoist stats
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: abhisheknaiidu/todoist-readme@master
+      - uses: actions/checkout@v3
+      - uses: aldoyh/todoist-readme@master
         with:
           TODOIST_API_KEY: ${{ secrets.TODOIST_API_KEY }}
           PREMIUM: ""
+        # Notify on Slack
+      - uses: act10ns/slack@v2.0.0
+        with:
+          # Specify Slack Incoming Webhook URL
+          status: "Success"
+          # Report on the status of individual steps
+          # steps: # optional
+          # Override default channel with different channel or username
+          channel: "github-live"
+          # Override message format for step
