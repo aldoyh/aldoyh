@@ -1,10 +1,10 @@
-name: Todoist Readme
+name: Todoist Syncer
 
 on:
   workflow_dispatch:
   schedule:
-    # Runs every minute
-    - cron: "30 * * * *"
+    # Runs every hour
+    - cron: "0 0 * * *"
 
 jobs:
   update-readme:
