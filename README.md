@@ -32,6 +32,8 @@
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=aldoyh&label=Profile%20views&color=0e75b6&style=flat" alt="aldoyh" /> </p>
 
+Last updated: 2021-01-25
+
 <!--
 **aldoyh/aldoyh** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
