@@ -36,18 +36,3 @@ jobs:
           issue-message: "Hello, thanks for posting."
           # Comment to post on an individual's first pull request
           pr-message: "Approved ❤️"
-
-      - name: slack-send
-          # Slack bot token
-        uses: slackapi/slack-github-action@v1.23.0
-        with:
-          # Slack channel ID where message will be posted. Needed if using bot token
-          channel-id: "github-pushed"
-          # Message to post into Slack. Needed if using bot token
-          slack-message: "Pushed now!"
-          # JSON payload to send to Slack if webhook route. If not supplied, json from GitHub event will be sent instead
-          payload: ""
-          # path to JSON payload to send to Slack if webhook route. If not supplied, json from GitHub event will be sent instead. If payload is provided, it will take preference over this field
-          payload-file-path: ""
-          # The timestamp of a previous message posted. It will update the existing message instead of posting a new message
-          update-ts: ""
