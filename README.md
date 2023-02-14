@@ -10,6 +10,7 @@
 - Streamed & Directed many shows since 2001 📺 Enjoy it [live](https://youtube.com/playlist?list=PLjaXnvdACZifh6jEW0fL5UwVT7WcMcJVa)
 - 📺 📡 🛰 Live Stream as showcase of how a one-man show supposed to work!™ (May 2022)
 
+---
 <h3 align="left">Connect with me:</h3>
 <p align="left">
 <a href="https://twitter.com/aldoyh" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="aldoyh" height="30" width="40" /></a>
@@ -30,6 +31,8 @@
 <p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=aldoyh&show_icons=true&locale=en" alt="aldoyh" /></p>
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=aldoyh&label=Profile%20views&color=0e75b6&style=flat" alt="aldoyh" /> </p>
+
+---
 
 > ### Super 🔋 Powers
 
