@@ -3,6 +3,7 @@
 
 - Born in [R.A.K.](https://visitrasalkhaimah.com) raised in the greatest Island [Kingdom of Bahrain](https://bahrain.com)
 
+- 🤖 Full Stack AI Prompter Engineer, 2023. ChatGPT | DALL-E | Stability.ai | Replicate | Certified OpenAI Engineer ⌨️
 - 🔭 I’m currently working as [a Senior Broadcast Engineer in Bahrain TV since 2001](https://live.bh)
 - Virtual Director of [VG55](https://www.youtube.com/channel/UCzXURHgFJuC0QpuFYOHRHeg)
 - AlSarya TV Show as Broadcast Game Designer
@@ -19,7 +20,7 @@
 
 ---
 
-### Todoist Stats ☠️
+## Todoist Stats
 
 <!-- TODO-IST:START -->
 <!-- TODO-IST:END -->
