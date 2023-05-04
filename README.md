@@ -1,5 +1,6 @@
 <h1 align="center">Hi 👋, I'm Hasan AlDoy</h1>
-    <h4 align="center">an Apache Royale Penguin 🐧 wondering the Arabian Desert</h4>
+
+#### 🧑🏻‍💻 an Apache Royale Penguin 🐧 wondering the Arabian Desert
 
 - Born in [R.A.K.](https://visitrasalkhaimah.com) raised in the greatest Island [Kingdom of Bahrain](https://bahrain.com)
 
