@@ -28,7 +28,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
       - name: Update Todoist Stats
-        uses: abhisheknaiidu/todoist-readme@master
+        uses: aldoyh/todoist-readme@main
         with:
           TODOIST_API_KEY: ${{ secrets.TODOIST_API_KEY }}
           PREMIUM: ""
