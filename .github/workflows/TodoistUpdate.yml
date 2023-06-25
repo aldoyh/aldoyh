@@ -21,14 +21,11 @@ permissions:
   
 
 jobs:
-  update-readme:
-    name: Update todoist stats
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-      - name: Update Todoist Stats
-        uses: abhisheknaiidu/todoist-readme@master
-        with:
-          TODOIST_API_KEY: ${{ secrets.TODOIST_API_KEY }}
-          PREMIUM: ""
+  - name: Todoist Readme
+    # You may pin to the exact commit or the version.
+    #  uses: abhisheknaiidu/todoist-readme@d3f543f292968e2ba18b35b2bee18760ca8c8b98
+    uses: abhisheknaiidu/todoist-readme@v0.0.9
+    with:
+    # Your Todoist API Key
+    TODOIST_API_KEY: ${{ secrets.TODOIST_API_KEY }}
+
