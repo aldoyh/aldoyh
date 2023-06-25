@@ -31,4 +31,5 @@ jobs:
         uses: abhisheknaiidu/todoist-readme@master
         with:
           TODOIST_API_KEY: ${{ secrets.TODOIST_API_KEY }}
+          USERNAME: "aldoyh@gmail.com"
           PREMIUM: ""
