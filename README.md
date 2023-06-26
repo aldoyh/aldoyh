@@ -13,6 +13,21 @@
 - 📺 📡 🛰 Live Stream as showcase of how a one-man show supposed to work!™ (May 2022)
 
 ---
+<div style="min-height: 300px; background-image: url(/images/martin-martz-aT24h1Lm_vw-unsplash.jpg)" valign="center">
+<div style="min-width: 200px">
+
+## Recent Projects:
+
+- [VG55](https://www.youtube.com/channel/UCzXURHgFJuC0QpuFYOHRHeg)
+- [AlSarya TV Show](https://alsarya.tv)
+- [Bahrain TV](https://live.bh)
+
+
+
+</div>
+</div>
+
+---
 <h3 align="left">Connect with me:</h3>
 <p align="left">
 <a href="https://twitter.com/aldoyh" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="aldoyh" height="30" width="40" /></a>
