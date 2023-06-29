@@ -1,24 +1,10 @@
-name: Todoist Readme Update
+name: Todoist Readme
 
 on:
-  # Runs on pushes targeting the default branch
-  push:
-    branches: ["main", "preview"]
-
-  # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
-
   schedule:
-    # Runs every 8 hours
+    # Runs every minute
     - cron: "0 */8 * * *"
-
-
-# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
-permissions:
-  contents: read
-  pages: write
-  id-token: write
-  
 
 jobs:
   update-readme:
