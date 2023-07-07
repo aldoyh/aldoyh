@@ -3,7 +3,7 @@
 
 on:
   issues:
-    types: [created, edited, deleted]
+    types: [opened, edited, deleted]
 
 name: New Issue
 
