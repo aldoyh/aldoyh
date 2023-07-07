@@ -2,7 +2,7 @@
 # Inspired by https://github.com/BrunnerLivio
 
 on:
-  discussion:
+  discussions:
     types: [created, edited, deleted]
 
 name: New Issue
