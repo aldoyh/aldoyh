@@ -11,8 +11,8 @@ jobs:
     name: Update todoist stats
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: abhisheknaiidu/todoist-readme@master
+      - uses: actions/checkout@v3
+      - uses: aldoyh/todoist-readme@master
         with:
           TODOIST_API_KEY: ${{ secrets.TODOIST_API_KEY }}
           PREMIUM: ""
