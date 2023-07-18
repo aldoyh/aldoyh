@@ -21,11 +21,11 @@ jobs:
       - name: Checkout code ⛵️
         uses: actions/checkout@v3
         with:
-          ref: master
+          ref: main
           token: ${{ secrets.GH_PAT }} # make sure this secret is available in your repo settings
       - name: Ship it 📦
         run: |
           git config --global user.email "aldoyh@gmail.com"
           git config --global user.name "Mastermind ⛵️"
-          git checkout -b master
-          git push origin master
+          git checkout -b main
+          git push origin main
