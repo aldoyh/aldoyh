@@ -15,3 +15,15 @@ jobs:
       - uses: aldoyh/todoist-readme@master
         with:
           TODOIST_API_KEY: ${{ secrets.TODOIST_API_KEY }}
+      - name: Checkout code
+        uses: actions/checkout@v3
+        with:
+          ref: master
+          token: ${{ secrets.GITHUB_TOKEN }} # make sure this secret is available in your repo settings
+      - name: Push 🫷
+        run: |
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "GitHub Actions Bot"
+          
+          git checkout -b production
+          git push origin production
