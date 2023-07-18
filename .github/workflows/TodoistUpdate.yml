@@ -20,7 +20,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       ref: master
-      token: ${{ secrets.GITHUB_TOKEN }}
+      token: ${{ secrets.GH_PAT }}
     steps: |
           git config --global user.email "aldoyh@gmail.com"
           git config --global user.name "Mastermind ⛵️"
