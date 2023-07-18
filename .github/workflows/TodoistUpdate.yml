@@ -15,8 +15,13 @@ jobs:
       - uses: aldoyh/todoist-readme@master
         with:
           TODOIST_API_KEY: ${{ secrets.TODOIST_API_KEY }}
-      - name: Push 🫷
-        run: |
+  checkout-the-code:
+    name: Push 🫷
+    runs-on: ubuntu-latest
+    env:
+      ref: master
+      token: ${{ secrets.GITHUB_TOKEN }}
+    steps: |
           git config --global user.email "aldoyh@gmail.com"
           git config --global user.name "Mastermind ⛵️"
           
