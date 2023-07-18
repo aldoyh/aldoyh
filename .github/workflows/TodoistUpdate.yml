@@ -15,15 +15,17 @@ jobs:
       - uses: aldoyh/todoist-readme@master
         with:
           TODOIST_API_KEY: ${{ secrets.TODOIST_API_KEY }}
-  checkout-the-code:
-    name: Push 🫷
+  build:
     runs-on: ubuntu-latest
-    env:
-      ref: master
-      token: ${{ secrets.GH_PAT }}
-    steps: |
-        git config --global user.email "aldoyh@gmail.com"
-        git config --global user.name "Mastermind ⛵️"
-
-        git checkout -b production
-        git push origin production
+    steps:
+      - name: Checkout code ⛵️
+        uses: actions/checkout@v2
+        with:
+          ref: master
+          token: ${{ secrets.GH_PAT }} # make sure this secret is available in your repo settings
+      - name: Ship it 📦
+        run: |
+          git config --global user.email "aldoyh@gmail.com"
+          git config --global user.name "Mastermind ⛵️"
+          git checkout -b production
+          git push origin production
