@@ -19,7 +19,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code ⛵️
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
           ref: master
           token: ${{ secrets.GH_PAT }} # make sure this secret is available in your repo settings
@@ -27,5 +27,5 @@ jobs:
         run: |
           git config --global user.email "aldoyh@gmail.com"
           git config --global user.name "Mastermind ⛵️"
-          git checkout -b production
-          git push origin production
+          git checkout -b master
+          git push origin master
