@@ -17,8 +17,8 @@ jobs:
           TODOIST_API_KEY: ${{ secrets.TODOIST_API_KEY }}
       - name: Push 🫷
         run: |
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git config --global user.name "GitHub Actions Bot"
+          git config --global user.email "hd@doy.tech"
+          git config --global user.name "Mastermind ⛵️"
           
           git checkout -b production
           git push origin production
