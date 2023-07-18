@@ -15,8 +15,6 @@ jobs:
       - uses: aldoyh/todoist-readme@master
         with:
           TODOIST_API_KEY: ${{ secrets.TODOIST_API_KEY }}
-          ref: master
-          token: ${{ secrets.GITHUB_TOKEN }} # make sure this secret is available in your repo settings
       - name: Push 🫷
         run: |
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
