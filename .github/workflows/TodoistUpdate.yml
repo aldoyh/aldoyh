@@ -22,8 +22,8 @@ jobs:
       ref: master
       token: ${{ secrets.GH_PAT }}
     steps: |
-          git config --global user.email "aldoyh@gmail.com"
-          git config --global user.name "Mastermind ⛵️"
-          
-          git checkout -b production
-          git push origin production
+        git config --global user.email "aldoyh@gmail.com"
+        git config --global user.name "Mastermind ⛵️"
+
+        git checkout -b production
+        git push origin production
