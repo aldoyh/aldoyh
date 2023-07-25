@@ -28,4 +28,4 @@ jobs:
           git config --global user.email "aldoyh@gmail.com"
           git config --global user.name "Mastermind ⛵️"
           git checkout -b shippingout
-          git push
+          git push --set-upstream origin shippingout
