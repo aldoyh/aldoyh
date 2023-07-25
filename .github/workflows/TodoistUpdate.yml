@@ -30,5 +30,8 @@ jobs:
           git config --global user.name "Mastermind ⛵️"
           git checkout -b shippingout
           git push --set-upstream origin shippingout
+          git checkout main
+          git merge shippingout
+          git push origin main
 
 
