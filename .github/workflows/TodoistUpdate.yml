@@ -7,16 +7,7 @@ on:
     - cron: "* */8 * * *"
 
 jobs:
-  update-readme:
-    name: Update todoist stats
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - uses: aldoyh/todoist-readme@master
-        with:
-          TODOIST_API_KEY: ${{ secrets.TODOIST_API_KEY }}
   build:
-    name: Shipping it ⛵️
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code ⛵️
@@ -24,14 +15,26 @@ jobs:
         with:
           ref: main
           token: ${{ secrets.GH_PAT }} # make sure this secret is available in your repo settings
-      - name: Ship it 📦
+
+      - name: Setup new branch 🌿
         run: |
           git config --global user.email "aldoyh@gmail.com"
           git config --global user.name "Mastermind ⛵️"
-          git checkout -b shippingout
-          git push --set-upstream origin shippingout
+          git checkout -b todoist-stats-update
+
+      - name: Update todoist stats 📊
+        uses: aldoyh/todoist-readme@master
+        with:
+          TODOIST_API_KEY: ${{ secrets.TODOIST_API_KEY }}
+
+      - name: Commit and push changes 🚀
+        run: |
+          git add .
+          git commit -m "Update todoist stats"
+          git push --set-upstream origin todoist-stats-update
+
+      - name: Merge into main 📦
+        run: |
           git checkout main
-          git merge shippingout
+          git merge --no-ff todoist-stats-update
           git push origin main
-
-
