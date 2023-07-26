@@ -27,14 +27,42 @@ jobs:
         with:
           TODOIST_API_KEY: ${{ secrets.TODOIST_API_KEY }}
 
+      - name: Check for changes in README.md 📝
+        id: diff-check
+        run: |
+          git diff --exit-code --quiet origin/main README.md || echo ::set-output name=difference::true
+
       - name: Commit and push changes 🚀
         run: |
-          git add .
-          git commit -m "Update todoist stats"
-          git push --set-upstream origin todoist-stats-update
+          if [[ "${{ steps.diff-check.outputs.difference }}" == "true" ]]; then
+            git add .
+            git commit -m "Update todoist stats"
+            git push --set-upstream origin todoist-stats-update
+          else
+            echo "No changes in README.md"
+          fi
 
       - name: Merge into main 📦
         run: |
-          git checkout main
-          git merge --no-ff todoist-stats-update
-          git push origin main
+          if [[ "${{ steps.diff-check.outputs.difference }}" == "true" ]]; then
+            git checkout main
+            git merge --no-ff todoist-stats-update
+            git push origin main
+          else
+            echo "No changes to merge into main"
+          fi
+
+      - name: Generate Report 🗒️
+        run: echo "Detailed report would go here" > report.html
+      
+      - name: Send Notification 📧
+        uses: dawidd6/action-send-mail@v2
+        with:
+          server_address: smtp.gmail.com
+          server_port: 465
+          username: ${{secrets.MAIL_USERNAME}}
+          password: ${{secrets.MAIL_PASSWORD}}
+          subject: GitHub Actions Report
+          body: file://report.html
+          to: ${{secrets.MAIL_TO}}
+          from: ${{secrets.MAIL_FROM}}
