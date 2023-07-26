@@ -59,3 +59,9 @@ jobs:
         uses: rtCamp/action-slack-notify@v2
         env:
           SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
+        with:
+          # Slack channel ID where message will be posted. Needed if using bot token
+          channel-id: "elzirnoog"
+          # Message to post into Slack. Needed if using bot token
+          slack-message: "Todoist updated"
+
