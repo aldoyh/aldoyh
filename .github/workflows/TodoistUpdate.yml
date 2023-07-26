@@ -37,6 +37,7 @@ jobs:
           if [[ "${{ steps.diff-check.outputs.difference }}" == "true" ]]; then
             git add .
             git commit -m "Update todoist stats"
+            git pull --rebase origin todoist-stats-update
             git push --set-upstream origin todoist-stats-update
           else
             echo "No changes in README.md"
