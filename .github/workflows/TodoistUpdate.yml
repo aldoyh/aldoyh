@@ -55,14 +55,7 @@ jobs:
       - name: Generate Report 🗒️
         run: echo "Detailed report would go here" > report.html
       
-      - name: Send Notification 📧
-        uses: dawidd6/action-send-mail@v2
-        with:
-          server_address: smtp.gmail.com
-          server_port: 465
-          username: ${{secrets.MAIL_USERNAME}}
-          password: ${{secrets.MAIL_PASSWORD}}
-          subject: GitHub Actions Report
-          body: file://report.html
-          to: ${{secrets.MAIL_TO}}
-          from: ${{secrets.MAIL_FROM}}
+      - name: Post to Slack 💬
+        uses: rtCamp/action-slack-notify@v2
+        env:
+          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
