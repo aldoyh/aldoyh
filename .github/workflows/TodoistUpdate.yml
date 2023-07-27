@@ -1,4 +1,4 @@
-name: Todoist Readme
+name: ReadMe Worker 🚧
 
 on:
   workflow_dispatch:
@@ -37,7 +37,9 @@ jobs:
           if [[ "${{ steps.diff-check.outputs.difference }}" == "true" ]]; then
             git add .
             git commit -m "Update todoist stats"
-            git push --force-with-lease origin todoist-stats-update
+            git fetch origin todoist-stats-update
+            git reset --hard origin/todoist-stats-update
+            git push origin todoist-stats-update
           else
             echo "No changes in README.md"
           fi
