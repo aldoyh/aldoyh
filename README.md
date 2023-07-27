@@ -42,7 +42,7 @@
 
 </div>
 
-# Todoist Stats
+## Todoist Stats
 
 <!-- TODO-IST:START -->
 🏆  **9,285** Karma Points           
