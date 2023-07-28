@@ -38,6 +38,7 @@ jobs:
     env:
       REPORT_MD: "🎙️ Reporting::"
     runs-on: ubuntu-latest
+    needs: build
     steps:
       - name: Commit and push changes 🚀
         run: |
@@ -71,9 +72,5 @@ jobs:
         uses: rtCamp/action-slack-notify@v2
         env:
           SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
-          REPORT: ${{ env.report }}
-        with:
-          # Slack channel ID where message will be posted. Needed if using bot token
-          channel-id: "C040ZLS7P2P"
-          # Message to post into Slack. Needed if using bot token
-          slack-message: "${{ env.REPORT }}"
+          INPUT_SLACK_MESSAGE: ${{ env.report }}
+          INPUT_CHANNEL_ID: 'C040ZLS7P2P'
