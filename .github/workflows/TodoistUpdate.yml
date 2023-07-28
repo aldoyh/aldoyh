@@ -36,7 +36,7 @@ jobs:
   deploy:
     name: Deployment ⛴️
     env:
-      REPORT: ""
+      REPORT: ${{ steps.report.outputs.report }}
     runs-on: ubuntu-latest
     needs: build
     steps:
@@ -51,6 +51,9 @@ jobs:
           else
             echo "No changes in README.md"
           fi
+          echo "difference=false" >> $GITHUB_ENV
+          echo "report=$(cat report.html)" >> $GITHUB_ENV
+          echo "🚧 Diff: ${{ env.difference }}"
 
       - name: Merge into main 📦
         run: |
@@ -67,6 +70,7 @@ jobs:
         run: |
           echo "Detailed report would go here" > report.html
           echo "report=$(cat report.html)" >> $GITHUB_ENV
+          echo "🚧 Report: ${{ steps.report.outputs.report }}"
 
       - name: Post to Slack 💬
         uses: rtCamp/action-slack-notify@v2
