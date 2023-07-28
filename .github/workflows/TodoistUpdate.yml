@@ -8,6 +8,7 @@ on:
 
 jobs:
   build:
+    name: Build 👔
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code ⛵️
@@ -31,7 +32,12 @@ jobs:
         id: diff-check
         run: |
           git diff --exit-code --quiet origin/main README.md || echo ::set-output name=difference::true
-
+  deploy:
+    name: Deployment ⛴️
+    env:
+      REPORT_MD: "🎙️ Reporting::"
+    runs-on: ubuntu-latest
+    steps:
       - name: Commit and push changes 🚀
         run: |
           if [[ "${{ steps.diff-check.outputs.difference }}" == "true" ]]; then
@@ -61,9 +67,10 @@ jobs:
         uses: rtCamp/action-slack-notify@v2
         env:
           SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
+          SLACK_MESSAGE: "🎙️Reportingg2 :"
         with:
           # Slack channel ID where message will be posted. Needed if using bot token
-          channel-id: elzirnoog
+          channel-id: "C040ZLS7P2P"
           # Message to post into Slack. Needed if using bot token
           slack-message: "Todoist updated"
           
