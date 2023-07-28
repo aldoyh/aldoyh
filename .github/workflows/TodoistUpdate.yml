@@ -46,7 +46,7 @@ jobs:
             git commit -m "Update todoist stats"
             git fetch origin todoist-stats-update
             git reset --hard origin/todoist-stats-update
-            git push --force-with-lease origin todoist-stats-update
+            git push --force-with-lease origin/todoist-stats-update
           else
             echo "No changes in README.md"
           fi
@@ -65,14 +65,15 @@ jobs:
         id: report
         run: |
           echo "Detailed report would go here" > report.html
-          echo "::set-output name=report::$(cat report.html)"
+          echo "report=$(cat report.html)" >> $GITHUB_ENV
 
       - name: Post to Slack 💬
         uses: rtCamp/action-slack-notify@v2
         env:
           SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
+          REPORT: ${{ env.report }}
         with:
           # Slack channel ID where message will be posted. Needed if using bot token
           channel-id: "C040ZLS7P2P"
           # Message to post into Slack. Needed if using bot token
-          slack-message: "${{ steps.report.outputs.report }}"
+          slack-message: "${{ env.REPORT }}"
