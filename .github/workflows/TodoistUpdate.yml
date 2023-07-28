@@ -36,7 +36,7 @@ jobs:
   deploy:
     name: Deployment ⛴️
     env:
-      REPORT_MD: "🎙️ Reporting::"
+      REPORT: ${{ env.report }}
     runs-on: ubuntu-latest
     needs: build
     steps:
