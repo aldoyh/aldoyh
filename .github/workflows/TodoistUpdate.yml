@@ -31,7 +31,8 @@ jobs:
       - name: Check for changes in README.md 📝
         id: diff-check
         run: |
-          git diff --exit-code --quiet origin/main README.md || echo ::set-output name=difference::true
+          git diff --exit-code --quiet origin/main README.md || echo "difference=true" >> $GITHUB_ENV
+
   deploy:
     name: Deployment ⛴️
     env:
@@ -40,19 +41,19 @@ jobs:
     steps:
       - name: Commit and push changes 🚀
         run: |
-          if [[ "${{ steps.diff-check.outputs.difference }}" == "true" ]]; then
+          if [[ "${{ env.difference }}" == "true" ]]; then
             git add .
             git commit -m "Update todoist stats"
             git fetch origin todoist-stats-update
             git reset --hard origin/todoist-stats-update
-            git push origin todoist-stats-update
+            git push --force-with-lease origin todoist-stats-update
           else
             echo "No changes in README.md"
           fi
 
       - name: Merge into main 📦
         run: |
-          if [[ "${{ steps.diff-check.outputs.difference }}" == "true" ]]; then
+          if [[ "${{ env.difference }}" == "true" ]]; then
             git checkout main
             git merge --no-ff todoist-stats-update
             git push origin main
@@ -61,18 +62,17 @@ jobs:
           fi
 
       - name: Generate Report 🗒️
-        run: echo "Detailed report would go here" > report.html
-      
+        id: report
+        run: |
+          echo "Detailed report would go here" > report.html
+          echo "::set-output name=report::$(cat report.html)"
+
       - name: Post to Slack 💬
         uses: rtCamp/action-slack-notify@v2
         env:
           SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
-          SLACK_MESSAGE: "🎙️Reportingg2 :"
         with:
           # Slack channel ID where message will be posted. Needed if using bot token
           channel-id: "C040ZLS7P2P"
           # Message to post into Slack. Needed if using bot token
-          slack-message: "Todoist updated"
-          
-          
-
+          slack-message: "${{ steps.report.outputs.report }}"
