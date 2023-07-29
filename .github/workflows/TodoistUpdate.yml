@@ -58,7 +58,7 @@ jobs:
           fi
           echo "difference=false" >> $GITHUB_ENV
           echo "report=$(cat report.html)" >> $GITHUB_ENV
-          echo "🚧 Diff: ${{ env.difference }}"
+          echo "🚧 Diff: ${{ env.difference }} | ${{ env.report }}
 
       - name: Merge into main 📦
         run: |
