@@ -47,7 +47,7 @@ jobs:
     steps:
       - name: Commit and push changes 🚀
         run: |
-          if [[ "${{ env.difference }}" == "true" ]]; then
+          if [[ "${{ jobs.build.outputs.difference }}" == "true" ]]; then
             git add .
             git commit -m "Update todoist stats"
             git fetch origin todoist-stats-update
@@ -62,7 +62,7 @@ jobs:
 
       - name: Merge into main 📦
         run: |
-          if [[ "${{ env.difference }}" == "true" ]]; then
+          if [[ "${{ jobs.build.outputs.difference }}" == "true" ]]; then
             git checkout main
             git merge --no-ff todoist-stats-update
             git push origin main
