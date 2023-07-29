@@ -12,6 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     outputs:
       reporting: ${{ steps.todoist.outputs.report }}
+      difference: ${{ steps.diffcheck.difference }}
     steps:
       - name: Checkout code ⛵️
         uses: actions/checkout@v3
@@ -32,7 +33,7 @@ jobs:
           TODOIST_API_KEY: ${{ secrets.TODOIST_API_KEY }}
 
       - name: Check for changes in README.md 📝
-        id: diff-check
+        id: diffcheck
         run: |
           git diff --exit-code --quiet origin/main README.md || echo "difference=true" >> $GITHUB_ENV
 
