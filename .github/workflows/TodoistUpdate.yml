@@ -47,23 +47,20 @@ jobs:
     steps:
       - name: Commit and push changes 🚀
         run: |
-          if [[ "${{ steps.todoist.outputs.difference }}" == "true" ]]; then
+          if [[ "${{ env.DIFFERENCE }}" == "true" ]]; then
             git add .
             git commit -m "Update todoist stats"
             git fetch origin todoist-stats-update
             git reset --hard origin/todoist-stats-update
             git push --force-with-lease origin/todoist-stats-update
+            echo "🚧 Diff: ${{ env.DIFFERENCE }}"
           else
             echo "No changes in README.md"
-          fi
-          echo "difference=false" >> $GITHUB_ENV
-          echo "report=$(cat report.html)" >> $GITHUB_ENV
-          echo "🚧 Diff: ${{ env.difference }} | ${{ env.report }}
+            echo "difference=false" >> $GITHUB_ENV
 
       - name: Merge into main 📦
         run: |
-          echo ${{ steps.todoist }}
-          if [[ "${{ steps.todoist.outputs.difference }}" == "true" ]]; then
+          if [[ "${{ env.DIFFERENCE }}" == "true" ]]; then
             git checkout main
             git merge --no-ff todoist-stats-update
             git push origin main
@@ -76,11 +73,11 @@ jobs:
         run: |
           echo "Detailed report would go here" > report.html
           echo "report=$(cat report.html)" >> $GITHUB_ENV
-          echo "🚧 Report: ${{ steps.report.outputs.report }}"
+          echo "🚧 Report: ${{ env.REPORT }}"
 
       - name: Post to Slack 💬
         uses: rtCamp/action-slack-notify@v2
         env:
           SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
-          INPUT_SLACK_MESSAGE: ${{ env.report }}
+          INPUT_SLACK_MESSAGE: ${{ env.REPORT }}
           INPUT_CHANNEL_ID: 'C040ZLS7P2P'
