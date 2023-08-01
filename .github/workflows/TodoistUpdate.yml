@@ -57,6 +57,7 @@ jobs:
           else
             echo "No changes in README.md"
             echo "difference=false" >> $GITHUB_ENV
+          fi
 
       - name: Merge into main 📦
         run: |
