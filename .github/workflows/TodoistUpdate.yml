@@ -47,7 +47,7 @@ jobs:
     steps:
       - name: Commit and push changes 🚀
         run: |
-          if [[ "${{ jobs.build.outputs.difference }}" == "true" ]]; then
+          if [[ "${{ steps.todoist.outputs.difference }}" == "true" ]]; then
             git add .
             git commit -m "Update todoist stats"
             git fetch origin todoist-stats-update
