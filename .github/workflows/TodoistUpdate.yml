@@ -3,8 +3,8 @@ name: ReadMe Worker 🚧
 on:
   workflow_dispatch:
   schedule:
-    # Runs every minute
-    - cron: "* */8 * * *"
+    # Runs every 8 hours
+    - cron: "0 */8 * * *"
 
 jobs:
   build:
