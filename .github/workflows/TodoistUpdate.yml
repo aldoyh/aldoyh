@@ -24,7 +24,7 @@ jobs:
         run: |
           git config --global user.email "aldoyh@gmail.com"
           git config --global user.name "Mastermind ⛵️"
-          git checkout -b todoist-stats-update
+          git checkout -b todoist-update
 
       - name: Update todoist stats 📊
         id: todoist
@@ -53,7 +53,7 @@ jobs:
         if: needs.build.outputs.difference == 'true'
         run: |
           git checkout main
-          git merge --no-ff todoist-stats-update
+          git merge --no-ff todoist-update
           git push origin main
 
       - name: Post to Slack 💬
