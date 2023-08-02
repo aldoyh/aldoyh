@@ -43,12 +43,7 @@ jobs:
           git add .
           git commit -m "Update README.md"
           git diff --exit-code --quiet origin/main README.md || echo "::set-output name=difference::true"
-
-  deploy:
-    name: Deployment ⛴️
-    needs: build
-    runs-on: ubuntu-latest
-    steps:
+          
       - name: Merge into main 📦
         if: needs.build.outputs.difference == 'true'
         run: |
