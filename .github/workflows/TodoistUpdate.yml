@@ -3,8 +3,7 @@ name: ReadMe Worker 🚧
 on:
   workflow_dispatch:
   schedule:
-    # Runs every 8 hours
-    - cron: "0 */8 * * *"
+    - cron: "0 */8 * * *" # Runs every 8 hours
 
 jobs:
   build:
@@ -42,7 +41,7 @@ jobs:
         run: |
           git add .
           git commit -m "Update README.md"
-          git diff --exit-code --quiet origin/main README.md || echo "::set-output name=difference::true"
+          git diff --exit-code --quiet origin/main README.md || echo "difference=true" >> $GITHUB_ENV
           
       - name: Merge into main 📦
         if: needs.build.outputs.difference == 'true'
