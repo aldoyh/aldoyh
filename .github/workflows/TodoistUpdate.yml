@@ -19,17 +19,23 @@ jobs:
           ref: main
           token: ${{ secrets.GH_PAT }} 
 
-      - name: Setup new branch 🌿
-        run: |
-          git config --global user.email "aldoyh@gmail.com"
-          git config --global user.name "Mastermind ⛵️"
-          git checkout -b todoist-update
-
       - name: Update todoist stats 📊
         id: todoist
         uses: aldoyh/todoist-readme@master
         with:
           TODOIST_API_KEY: ${{ secrets.TODOIST_API_KEY }}
+          
+      - name: Checkout code ⛵️
+        uses: actions/checkout@v2
+        with:
+          ref: main
+          token: ${{ secrets.GH_PAT }} 
+
+      - name: Setup new branch 🌿
+        run: |
+          git config --global user.email "aldoyh@gmail.com"
+          git config --global user.name "Mastermind ⛵️"
+          git checkout -b todoist-update
 
       - name: Generate Report 🗒️
         run: |
