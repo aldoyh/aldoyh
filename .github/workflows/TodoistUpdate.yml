@@ -1,4 +1,4 @@
-name: ReadMe Worker 🚧
+name: Update README with Todoist Stats
 
 on:
   workflow_dispatch:
@@ -6,41 +6,30 @@ on:
     - cron: "0 */8 * * *" # Runs every 8 hours
 
 jobs:
-  build:
-    name: Build 👔
+  update-readme:
+    name: Update README.md with Todoist Stats
     runs-on: ubuntu-latest
-    outputs:
-      reporting: ${{ steps.todoist.outputs.report }}
-      difference: ${{ steps.diffcheck.outputs.difference }}  
     steps:
       - name: Checkout code ⛵️
         uses: actions/checkout@v2
         with:
           ref: main
-          token: ${{ secrets.GH_PAT }} 
+          token: secrets.GH_PAT 
 
-      - name: Update todoist stats 📊
+      - name: Setup Node.js environment 🌍
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+
+      - name: Install dependencies
+        run: npm install axios humanize-plus
+
+      - name: Update README.md with Todoist Stats
         id: todoist
-        uses: aldoyh/todoist-readme@master
-        with:
-          TODOIST_API_KEY: ${{ secrets.TODOIST_API_KEY }}
-          
-      - name: Checkout code ⛵️
-        uses: actions/checkout@v2
-        with:
-          ref: main
-          token: ${{ secrets.GH_PAT }} 
-
-      - name: Setup new branch 🌿
+        env:
+          TODOIST_API_KEY: secrets.TODOIST_API_KEY
         run: |
-          git config --global user.email "aldoyh@gmail.com"
-          git config --global user.name "Mastermind ⛵️"
-          git checkout -b todoist-update
-
-      - name: Generate Report 🗒️
-        run: |
-          echo "Detailed report would go here" > report.html
-          echo "report=$(cat report.html)" >> $GITHUB_ENV
+          node readmeTodoist.js
 
       - name: Check for changes in README.md 📝
         id: diffcheck
@@ -48,17 +37,10 @@ jobs:
           git diff --exit-code --quiet origin/main README.md || echo "difference=true" >> $GITHUB_ENV
           git add .
           git commit -m "Update README.md"
-          
+
       - name: Merge into main 📦
-        if: needs.build.outputs.difference == 'true'
+        if: 
         run: |
           git checkout main
           git merge --no-ff todoist-update
           git push origin main
-      
-      - name: Post to Slack 💬
-        uses: rtCamp/action-slack-notify@v2
-        env:
-          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
-          INPUT_SLACK_MESSAGE: "${{ needs.build.outputs.reporting }}"
-          INPUT_CHANNEL_ID: 'C040ZLS7P2P'
