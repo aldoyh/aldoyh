@@ -14,12 +14,12 @@ jobs:
         uses: actions/checkout@v2
         with:
           ref: main
-          token: ${{ secrets.GH_PAT }} 
+          token: ${{ secrets.GH_PAT }}
 
       - name: Setup git ⚙️
         run: |
-          git config --global user.email "aldoyh@gmail.com"
-          git config --global user.name "Hasan"
+          git config --global user.email "your-email@example.com"
+          git config --global user.name "Your Name"
 
       - name: Update todoist stats 📊
         id: todoist
@@ -29,11 +29,11 @@ jobs:
 
       - name: Get current date
         id: date
-        run: echo "::set-output name=date::$(date '+%Y-%m-%d %H:%M:%S')"
+        run: echo "date=$(date '+%Y-%m-%d %H:%M:%S')" >> $GITHUB_ENV
 
       - name: Update README with current date
         run: |
-          sed -i "/<!-- TODO-IST:START -->/a \Updated: ${{ steps.date.outputs.date }}" README.md
+          sed -i "/<!-- TODO-IST:START -->/a \Updated: ${{ env.date }}" README.md
 
       - name: Check for changes in README.md 📝
         id: diffcheck
@@ -42,9 +42,7 @@ jobs:
           git add .
           git commit -m "Update README.md"
         
-      - name: Merge into main 📦
+      - name: Push changes 📦
         if: env.difference == 'true'
         run: |
-          git checkout main
-          git merge --no-ff todoist-update
           git push origin main
