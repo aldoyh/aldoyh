@@ -1,8 +1,3 @@
-<style>
- body {
-  background-color: #888;
- }
-</style>
 <h1 align="center">Hi 👋, I'm Hasan AlDoy</h1>
 
 #### 🧑🏻‍💻 an Apache Royale Penguin 🐧 wondering the Arabian Desert
@@ -18,16 +13,14 @@
 - 📺 📡 🛰 Live Stream as showcase of how a one-man show supposed to work!™ (May 2022)
 
 ---
-<div style="min-height: 300px; background-image: url(/images/martin-martz-aT24h1Lm_vw-unsplash.jpg)" valign="center">
-<div style="min-width: 200px">
+<div valign="center" class="hero">
+<div class="container">
 
 ## Recent Projects:
 
 - [VG55](https://www.youtube.com/channel/UCzXURHgFJuC0QpuFYOHRHeg)
 - [AlSarya TV Show](https://alsarya.tv)
 - [Bahrain TV](https://live.bh)
-
-
 
 </div>
 </div>
@@ -81,3 +74,19 @@ Updated: 2023-08-28 16:20:48
     handcrafted by Bahrain's 🇧🇭 Finest Artisans ⦿ inspired by @doytech
     
     version 1133
+
+
+
+---
+<style>
+ body {
+  background-color: #0D0D0D;
+  color: #EDEDED;
+ }
+
+ .hero {
+  background-image: url(/images/martin-martz-aT24h1Lm_vw-unsplash.jpg);
+  background-size: cover;
+  min-height: 300px;
+ }
+</style>
