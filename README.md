@@ -1,3 +1,8 @@
+<style>
+ body {
+  background-color: #888;
+ }
+</style>
 <h1 align="center">Hi 👋, I'm Hasan AlDoy</h1>
 
 #### 🧑🏻‍💻 an Apache Royale Penguin 🐧 wondering the Arabian Desert
