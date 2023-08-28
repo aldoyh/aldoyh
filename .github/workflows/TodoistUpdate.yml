@@ -18,8 +18,8 @@ jobs:
 
       - name: Setup git ⚙️
         run: |
-          git config --global user.email "your-email@example.com"
-          git config --global user.name "Your Name"
+          git config --global user.email "aldoyh@gmail.com"
+          git config --global user.name "Hasan"
 
       - name: Update todoist stats 📊
         id: todoist
