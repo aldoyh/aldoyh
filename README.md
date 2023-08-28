@@ -115,14 +115,15 @@ Updated: 2023-08-28 16:20:48
  }
 
  .container {
-  display: flex;
+  display: grid;
  }
 
  .card {
   display: flex;
-  width: 250px;
-  height: 250px;
+  width: 10vw;
+  height: 15vh;
   /* rounded corners  */
   
+
  }
 </style>
