@@ -1,4 +1,4 @@
-name: Update README with Todoist Stats
+name: 🚧 Todoist Updater 📯
 
 on:
   workflow_dispatch:
