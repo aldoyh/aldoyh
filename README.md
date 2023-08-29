@@ -80,8 +80,9 @@
 </div>
 
     handcrafted by Bahrain's 🇧🇭 Finest Artisans ⦿ inspired by @doytech
-
-    version 1.0.2023.08.28
+    version 1.0.2023.08.29
+    
+    😘 this profile was inspired by several others.
 
 ---
 <style>
@@ -91,19 +92,19 @@
  }
 
  .hero {
-  background-image: url(/aldoyh/aldoyh/images/photoreal_stunning_gaming_wallpaper_0_fbb4ad98-da5e-44a0-a664-9d05a84f39ad.jpg);
+  background-image: url(https://raw.githubusercontent.com/aldoyh/aldoyh/images/photoreal_stunning_gaming_wallpaper_0_fbb4ad98-da5e-44a0-a664-9d05a84f39ad.jpg);
   background-size: cover;
   min-height: 300px;
  }
 
  .intro {
-    background-image: url(/aldoyh/aldoyh/images/DreamShaper_v7_by_Hasan_Aldoy_Mastermind2.jpg);
+    background-image: url(https://raw.githubusercontent.com/aldoyh/aldoyh/images/DreamShaper_v7_by_Hasan_Aldoy_Mastermind2.jpg);
     background-size: cover;
 
  }
 
  .footer {
-    background-image: url(/aldoyh/aldoyh/images/DreamShaper_v7_by_Hasan_Aldoy_Mastermind.jpg);
+    background-image: url(https://raw.githubusercontent.com/aldoyh/aldoyh/images/DreamShaper_v7_by_Hasan_Aldoy_Mastermind.jpg);
     background-size: cover;
     min-height: 350px;
  }
