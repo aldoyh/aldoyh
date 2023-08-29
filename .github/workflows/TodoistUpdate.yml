@@ -26,6 +26,7 @@ jobs:
         uses: aldoyh/todoist-readme@master
         with:
           TODOIST_API_KEY: ${{ secrets.TODOIST_API_KEY }}
+          GH_PAT: ${{ secrets.GH_PAT }}
 
       - name: Get current date
         id: date
