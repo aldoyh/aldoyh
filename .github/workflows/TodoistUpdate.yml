@@ -32,11 +32,6 @@ jobs:
         id: date
         run: echo "date=$(date '+%Y-%m-%d %H:%M:%S')" >> $GITHUB_ENV
 
-      - name: Update README with current date
-        run: |
-          # sed -i "/<!-- TODO-IST:START -->/a \Updated: ${{ env.date }}" README.md
-          sed -i "/<!-- TODO-IST:END -->/a \🗓️ Updated: ${{ env.date }}" README.md
-
       - name: Check for changes in README.md 📝
         id: diffcheck
         run: |
