@@ -26,7 +26,7 @@ jobs:
         uses: aldoyh/todoist-readme@master
         with:
           TODOIST_API_KEY: ${{ secrets.TODOIST_API_KEY }}
-          USERNAME: ${{ gh.actor }}
+          USERNAME: ${{ github.actor }}
 
       - name: Get current date
         id: date
