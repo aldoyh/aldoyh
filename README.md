@@ -94,19 +94,19 @@
  }
  
  .hero {
-  background-image: url(https://github.com/aldoyh/aldoyh/blob/main/images/photoreal_stunning_gaming_wallpaper_0_fbb4ad98-da5e-44a0-a664-9d05a84f39ad.jpg);
+  background-image: url(https://github.com/aldoyh/aldoyh/blob/main/images/photoreal_stunning_gaming_wallpaper_0_fbb4ad98-da5e-44a0-a664-9d05a84f39ad.jpg?raw=true);
   background-size: cover;
   min-height: 300px;
  }
 
  .intro {
-    background-image: url(https://github.com/aldoyh/aldoyh/blob/main/images/DreamShaper_v7_by_Hasan_Aldoy_Mastermind2.jpg);
+    background-image: url(https://github.com/aldoyh/aldoyh/blob/main/images/DreamShaper_v7_by_Hasan_Aldoy_Mastermind2.jpg?raw=true);
     background-size: cover;
 
  }
 
  .footer {
-    background-image: url(https://github.com/aldoyh/aldoyh/blob/main/images/DreamShaper_v7_by_Hasan_Aldoy_Mastermind.jpg);
+    background-image: url(https://github.com/aldoyh/aldoyh/blob/main/images/DreamShaper_v7_by_Hasan_Aldoy_Mastermind.jpg?raw=true);
     background-size: cover;
     min-height: 350px;
  }
