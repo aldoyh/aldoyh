@@ -19,6 +19,7 @@ jobs:
         run: |
           git config --global user.email "aldoyh@gmail.com"
           git config --global user.name "Hasan"
+
       - name: Update todoist stats 📊
         id: todoist
         uses: aldoyh/todoist-readme@master
@@ -26,10 +27,10 @@ jobs:
           TODOIST_API_KEY: ${{ secrets.TODOIST_API_KEY }}
       - name: Check for changes in README.md 📝
         id: diffcheck
+        continue-on-error: true
         run: |
           git diff --exit-code --quiet origin/main README.md || echo "difference=true" >> $GITHUB_ENV
-          git add .
-          git commit -m "Update README.md"        
+          
       - name: Push changes 📦
         if: env.difference == 'true'
         run: |
