@@ -1,6 +1,6 @@
 <h1 align="center">Hi 👋, I'm Hasan AlDoy</h1>
 
-<div class="intro">
+<div class="intro" style="font-size: 1.5em; background-color: #0D0D0D; color: #EDEDED; padding: 1em;">
 
 ### 🧑🏻‍💻 an Apache Royale Penguin 🐧 wondering the Arabian Desert
 
@@ -47,10 +47,10 @@
 ## Todoist Stats
 
 <!-- TODO-IST:START -->
-🏆  **9,742** Karma Points           
- <br>🌸  Completed **0** tasks today           
- <br>✅  Completed **758** tasks so far           
- <br>⏳  Longest streak is **5** days           
+🏆  **9,742** Karma Points
+ <br>🌸  Completed **0** tasks today
+ <br>✅  Completed **758** tasks so far
+ <br>⏳  Longest streak is **5** days
  <br>📅  Last updated: **Thursday, August 31, 2023**
 <!-- TODO-IST:END -->
 🗓️ Updated: 2023-08-29 16:22:13
@@ -83,7 +83,7 @@
 
     handcrafted by Bahrain's 🇧🇭 Finest Artisans ⦿ inspired by @doytech
     version 1.0.2023.08.29
-    
+
     😘 this profile was inspired by several others.
 
 ---
@@ -92,7 +92,7 @@
   background-color: #0D0D0D;
   color: #EDEDED;
  }
- 
+
  .hero {
   background-image: url(https://github.com/aldoyh/aldoyh/blob/main/images/photoreal_stunning_gaming_wallpaper_0_fbb4ad98-da5e-44a0-a664-9d05a84f39ad.jpg?raw=true);
   background-size: cover;
@@ -126,7 +126,7 @@
   width: 10vw;
   height: 15vh;
   /* rounded corners  */
-  
+
 
  }
 </style>
