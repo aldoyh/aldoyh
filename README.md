@@ -84,10 +84,12 @@
     handcrafted by Bahrain's 🇧🇭 Finest Artisans ⦿ inspired by @doytech
     version 1.0.2023.08.29
 
-    😘 this profile was inspired by several others.
+    😘 this profile was inspired by several others. https://github.com/elangosundar/awesome-README-templates && https://github.com/abhisheknaiidu/todoist-readme & https://github.com/benjaminsampica/benjaminsampica
 
 ---
+
 <style>
+ 
  body {
   background-color: #0D0D0D;
   color: #EDEDED;
@@ -125,8 +127,6 @@
   display: flex;
   width: 10vw;
   height: 15vh;
-  /* rounded corners  */
-
-
  }
+ 
 </style>
