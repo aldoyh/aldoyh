@@ -31,57 +31,49 @@
 <div class="card">
 
 [Undisclosed](https://doy.tech/undisclosed)
-
-2023
+<span style="font-size: 0.5em;">2023</span>
 
 </div>
 <div class="card">
 
 [Undisclosed](https://doy.tech/undisclosed)
-
-2023
+<span style="font-size: 0.5em;">2023</span>
 
 </div>
 <div class="card">
 
 [VG55](https://www.youtube.com/channel/UCzXURHgFJuC0QpuFYOHRHeg)
-
-2020
+<span style="font-size: 0.5em;">2020</span>
 
 </div>
 <div class="card">
 
 [AlSarya TV Show](https://alsarya.tv)
-
-2019 - 2022
+<span style="font-size: 0.5em;">2019 - 2022</span>
 
 </div>
 <div class="card">
 
 [Bahrain TV](https://live.bh)
-
-2001 - 2023
-
-</div>
-<div class="card">
-
-[Undisclosed](https://doy.tech/undisclosed)
-
-2023
+<span style="font-size: 0.5em;">2001 - 2023</span>
 
 </div>
 <div class="card">
 
 [Undisclosed](https://doy.tech/undisclosed)
-
-1996
+<span style="font-size: 0.5em;">2023</span>
 
 </div>
 <div class="card">
 
 [Undisclosed](https://doy.tech/undisclosed)
+<span style="font-size: 0.5em;">1996</span>
 
-2021
+</div>
+<div class="card">
+
+[Undisclosed](https://doy.tech/undisclosed)
+<span style="font-size: 0.5em;">2021</span>
 
 </div>
 </div>
@@ -144,6 +136,10 @@
 
 #grid>.card {
    background-image: url(https://github.com/aldoyh/aldoyh/blob/main/images/project-bg.png?raw=true);
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: top;
+   padding: 1em;
 }
 
 </style>
@@ -168,60 +164,81 @@
 <h1>waves of tech ahead</h1>
 </div>
 
-    handcrafted by Bahrain's 🇧🇭 Finest Artisans ⦿ inspired by @doytech
-    version 1.0.2023.08.29
+    this profile & inclosed content are handcrafted by Bahrain's 🇧🇭 Finest Artisans ⦿ inspired by @doytech | version 1.5.2023.09.15
 
 ---
 
-<span style="font-size: x-large;">T</span>his profile was inspired by several others. 😘
-<a href="https://github.com/elangosundar/awesome-README-templates">awesome-README</a> && <a href="https://github.com/abhisheknaiidu/todoist-readme" target="_blank">todoist-readme</a> && <a href="https://github.com/benjaminsampica/benjaminsampica" target="_blank">benjaminsampica</a>
+<span style="font-size: x-large;">
+T</span>his profile was inspired by several others. 😘 <a href="https://github.com/elangosundar/awesome-README-templates">awesome-README</a> && <a href="https://github.com/abhisheknaiidu/todoist-readme" target="_blank">todoist-readme</a> && <a href="https://github.com/benjaminsampica/benjaminsampica" target="_blank">benjaminsampica</a>
+
 
 <style>
 
- body {
-  background-color: #0D0D0D;
-  color: #EDEDED;
- }
+body {
+background-color: #0D0D0D;
+color: #EDEDED;
+}
 
- .hero {
-  background-image: url(https://github.com/aldoyh/aldoyh/blob/main/images/photoreal_stunning_gaming_wallpaper_0_fbb4ad98-da5e-44a0-a664-9d05a84f39ad.jpg?raw=true);
-  background-size: cover;
-  min-height: 300px;
- }
+a {
+color: #F6660A;
+}
 
- .intro {
-    background-image: url(https://github.com/aldoyh/aldoyh/blob/main/images/DreamShaper_v7_by_Hasan_Aldoy_Mastermind2.jpg?raw=true);
-    background-size: cover;
+.hero {
+background-image: url(https://github.com/aldoyh/aldoyh/blob/main/images/photoreal_stunning_gaming_wallpaper_0_fbb4ad98-da5e-44a0-a664-9d05a84f39ad.jpg?raw=true);
+background-size: cover;
+min-height: 300px;
+}
 
- }
+.intro {
+   background-image: url(https://github.com/aldoyh/aldoyh/blob/main/images/DreamShaper_v7_by_Hasan_Aldoy_Mastermind2.jpg?raw=true);
+   background-size: cover;
 
- .footer {
-    background-image: url(https://github.com/aldoyh/aldoyh/blob/main/images/DreamShaper_v7_by_Hasan_Aldoy_Mastermind.jpg?raw=true);
-    background-size: cover;
-    min-height: 350px;
- }
+}
 
- .footer h1 {
-  position: absolute;
-  right: 10%;
+.footer {
+   background-image: url(https://github.com/aldoyh/aldoyh/blob/main/images/DreamShaper_v7_by_Hasan_Aldoy_Mastermind.jpg?raw=true);
+   background-size: cover;
+   min-height: 350px;
+}
 
- }
+.footer h1 {
+position: absolute;
+right: 10%;
 
- .container {
-  display: grid;
- }
+}
 
- .card {
-   background-color: rgba(0, 0, 0, 0.5);
-   padding: 2em;
+.container {
+display: grid;
+}
+
+.card {
+background-color: rgba(0, 0, 0, 0.5);
+padding: 2em;
+color: #ffffff;
+text-align: center;
+font-size: 30px;
+min-height: 200px;
+text-decoration: none;
+margin: 1em;
+border-radius: 10px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.card:hover {
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
+.card a {
    color: #ffffff;
-   text-align: center;
-   font-size: 30px;
-   min-height: 200px;
    text-decoration: none;
-   margin: 1em;
-   border-radius: 10px;
-   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
- }
+}
+
+.card a:hover {
+   color: #F6660A;
+   text-decoration: none;
+}
+
+
+
 
 </style>
