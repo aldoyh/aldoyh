@@ -1,41 +1,95 @@
 <h1 align="center">Hi 👋, I'm Hasan AlDoy</h1>
 
-<div class="intro" style="font-size: 1.5em; background-color: #0D0D0D; color: #EDEDED; padding: 1em;">
+<div class="intro" style="font-size: 1.5em; background-color: #0D0D0D; color: #EDEDED;">
 
-### 🧑🏻‍💻 an Apache Royale Penguin 🐧 wondering the Arabian Desert
+<div style="background-color: rgba(0, 0, 0, 0.5); padding: 2em;">
+
+### <span style="font-size: xxx-large;">A</span>pache Royale Penguin 🐧 <br /> <span style="font-size: xxx-large;">W</span>ondering the Arabian Desert
 
 - Born in [R.A.K.](https://visitrasalkhaimah.com) raised in the greatest Island [Kingdom of Bahrain](https://bahrain.com)
 
-- 🤖 Full Stack AI Prompter Engineer, 2023. ChatGPT | DALL-E | Stability.ai | Replicate | Certified OpenAI Engineer ⌨️
+- 🤖 <span style="font-size: xxx-large;">F</span>ull Stack AI Prompter Engineer, 2023. ChatGPT | DALL-E | Stability.ai | Replicate | Certified OpenAI Engineer ⌨️
 - 🔭 I’m currently working as [a Senior Broadcast Engineer in Bahrain TV since 2001](https://live.bh)
 - Virtual Director of [VG55](https://www.youtube.com/channel/UCzXURHgFJuC0QpuFYOHRHeg)
 - AlSarya TV Show as Broadcast Game Designer
-- Animator + Lead Developer for [alsarya.tv](https://alsarya.tv)
+- <span style="font-size: xxx-large;">A</span>nimator + Lead Developer for [alsarya.tv](https://alsarya.tv)
 - Streamed & Directed many shows since 2001 📺 Enjoy it [live](https://youtube.com/playlist?list=PLjaXnvdACZifh6jEW0fL5UwVT7WcMcJVa)
 - 📺 📡 🛰 Live Stream as showcase of how a one-man show supposed to work!™ (May 2022)
 
 </div>
 
+</div>
+
 ---
+
 <div valign="center" class="hero">
-<div class="container">
+<div class="container" style="background-color: rgba(0, 0, 0, 0.5); padding: 2em;">
 
-## Recent Projects:
+## Recent Projects ❤️
 
+<div id="grid">
 <div class="card">
-- [VG55](https://www.youtube.com/channel/UCzXURHgFJuC0QpuFYOHRHeg)
+
+[Undisclosed](https://doy.tech/undisclosed)
+
+2023
+
 </div>
 <div class="card">
-- [AlSarya TV Show](https://alsarya.tv)
+
+[Undisclosed](https://doy.tech/undisclosed)
+
+2023
+
 </div>
 <div class="card">
-- [Bahrain TV](https://live.bh)
-</div>
 
+[VG55](https://www.youtube.com/channel/UCzXURHgFJuC0QpuFYOHRHeg)
+
+2020
+
+</div>
+<div class="card">
+
+[AlSarya TV Show](https://alsarya.tv)
+
+2019 - 2022
+
+</div>
+<div class="card">
+
+[Bahrain TV](https://live.bh)
+
+2001 - 2023
+
+</div>
+<div class="card">
+
+[Undisclosed](https://doy.tech/undisclosed)
+
+2023
+
+</div>
+<div class="card">
+
+[Undisclosed](https://doy.tech/undisclosed)
+
+1996
+
+</div>
+<div class="card">
+
+[Undisclosed](https://doy.tech/undisclosed)
+
+2021
+
+</div>
+</div>
 </div>
 </div>
 
 ---
+
 <h3 align="left">Connect with me:</h3>
 <p align="left">
 <a href="https://twitter.com/aldoyh" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="aldoyh" height="30" width="40" /></a>
@@ -44,34 +98,67 @@
 
 ---
 
+<details>
+<summary>📮 Social Contacts 📬</summary>
+<br>
+
 ## Todoist Stats
 
 <!-- TODO-IST:START -->
-🏆  **9,742** Karma Points
- <br>🌸  Completed **0** tasks today
- <br>✅  Completed **758** tasks so far
- <br>⏳  Longest streak is **5** days
- <br>📅  Last updated: **Thursday, August 31, 2023**
-<!-- TODO-IST:END -->
-🗓️ Updated: 2023-08-29 16:22:13
 
-> ⤷ Social Contacts 📬
+🏆 **9,742** Karma Points
+<br>🌸 Completed **0** tasks today
+<br>✅ Completed **758** tasks so far
+<br>⏳ Longest streak is **5** days
+<br>📅 Last updated: **Thursday, August 31, 2023**
+
+<!-- TODO-IST:END -->
 
 <a aligh="left" href="https://doy.tech" target="_blank" rel="noreferrer noopener"><img src="https://raw.githubusercontent.com/0xShapeShifter/dev-story/master/public/images/socials/globe.svg" alt="Website" width="22" height="22" /></a> <a aligh="left" href="mailto:hellos@doy.tech" target="_blank" rel="noreferrer noopener"><img src="https://raw.githubusercontent.com/0xShapeShifter/dev-story/master/public/images/socials/at.svg" alt="Email" width="22" height="22" /></a> <a aligh="left" href="https://twitter.com/aldoyh" target="_blank" rel="noreferrer noopener"><img src="https://raw.githubusercontent.com/0xShapeShifter/dev-story/master/public/images/socials/twitter.svg" alt="Twitter" width="22" height="22" /></a>
 
-<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=aldoyh&show_icons=true&locale=en" alt="aldoyh" /></p>
+   <p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=aldoyh&show_icons=true&locale=en" alt="aldoyh" /></p>
 
-<p align="left"> <img src="https://komarev.com/ghpvc/?username=aldoyh&label=Profile%20views&color=0e75b6&style=flat" alt="aldoyh" /> </p>
+   <p align="left"> <img src="https://komarev.com/ghpvc/?username=aldoyh&label=Profile%20views&color=0e75b6&style=flat" alt="aldoyh" /> </p>
+
+</details>
 
 ---
 
+<style>
+
+#grid, .showcase {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  grid-gap: 15px;
+}
+
+.showcase>a, #grid>div {
+  font-size: 30px;
+  padding: .5em;
+  color: #ffffff;
+  background: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+#grid>.card {
+   background-image: url(https://github.com/aldoyh/aldoyh/blob/main/images/project-bg.png?raw=true);
+}
+
+</style>
+
 > ### Super 🔋 Powers
+
+<div class="showcase">
 
 <a href="https://airsdk.dev" target="_blank" rel="noreferrer noopener"><img src="https://avatars.githubusercontent.com/u/78458083?s=200&v=4" alt="AirSDK by Harman" width="25" height="25" /></a> <a href="https://airsdk.dev" target="_blank" rel="noreferrer noopener"><img src="svgs/actionscript3-logo.svg" alt="actionScript" width="25" height="25" /></a> <a href="https://dart.dev" target="_blank" rel="noreferrer noopener"><img src="https://raw.githubusercontent.com/0xShapeShifter/dev-story/master/public/images/skills/core/dart.svg" alt="Dart" width="25" height="25" /></a> <a href="https://www.javascript.com" target="_blank" rel="noreferrer noopener"><img src="https://raw.githubusercontent.com/0xShapeShifter/dev-story/master/public/images/skills/core/javascript.svg" alt="JavaScript" width="25" height="25" /></a> <a href="https://www.php.net" target="_blank" rel="noreferrer noopener"><img src="https://raw.githubusercontent.com/0xShapeShifter/dev-story/master/public/images/skills/core/php.svg" alt="PHP" width="25" height="25" /></a>
 
- > ### Skills
+</div>
 
-   <a href="https://www.python.org" target="_blank" rel="noreferrer noopener"><img src="https://raw.githubusercontent.com/0xShapeShifter/dev-story/master/public/images/skills/core/python.svg" alt="Python" width="25" height="25" /></a> <a href="https://www.typescriptlang.org" target="_blank" rel="noreferrer noopener"><img src="https://raw.githubusercontent.com/0xShapeShifter/dev-story/master/public/images/skills/core/typescript.svg" alt="Typescript" width="25" height="25" /></a>  <a href="https://html.com/html5/" target="_blank" rel="noreferrer noopener"><img src="https://raw.githubusercontent.com/0xShapeShifter/dev-story/master/public/images/skills/frontend/html5.svg" alt="HTML5" width="25" height="25" /></a> <a href="https://vuejs.org" target="_blank" rel="noreferrer noopener"><img src="https://raw.githubusercontent.com/0xShapeShifter/dev-story/master/public/images/skills/frontend/vue.svg" alt="Vue" width="25" height="25" /></a> <a href="https://www.solidjs.com" target="_blank" rel="noreferrer noopener"><img src="https://raw.githubusercontent.com/0xShapeShifter/dev-story/master/public/images/skills/frontend/solidjs.svg" alt="SolidJS" width="25" height="25" /></a> <a href="https://mui.com/material-ui/" target="_blank" rel="noreferrer noopener"><img src="https://raw.githubusercontent.com/0xShapeShifter/dev-story/master/public/images/skills/frontend/mui.svg" alt="Material UI" width="25" height="25" /></a> <a href="http://vitejs.dev/" target="_blank" rel="noreferrer noopener"><img src="https://raw.githubusercontent.com/0xShapeShifter/dev-story/master/public/images/skills/frontend/vite.svg" alt="Vite" width="25" height="25" /></a>  <a href="https://nodejs.org" target="_blank" rel="noreferrer noopener"><img src="https://raw.githubusercontent.com/0xShapeShifter/dev-story/master/public/images/skills/backend/nodejs.svg" alt="NodeJS" width="25" height="25" /></a> <a href="http://expressjs.com" target="_blank" rel="noreferrer noopener"><img src="https://raw.githubusercontent.com/0xShapeShifter/dev-story/master/public/images/skills/backend/express.svg" alt="Express" width="25" height="25" /></a> <a href="https://graphql.org" target="_blank" rel="noreferrer noopener"><img src="https://raw.githubusercontent.com/0xShapeShifter/dev-story/master/public/images/skills/backend/graphql.svg" alt="GraphQL" width="25" height="25" /></a> <a href="https://www.mongodb.com" target="_blank" rel="noreferrer noopener"><img src="https://raw.githubusercontent.com/0xShapeShifter/dev-story/master/public/images/skills/backend/mongodb.svg" alt="Mongo DB" width="25" height="25" /></a> <a href="https://www.mysql.com" target="_blank" rel="noreferrer noopener"><img src="https://raw.githubusercontent.com/0xShapeShifter/dev-story/master/public/images/skills/backend/mysql.svg" alt="MySQL" width="25" height="25" /></a> <a href="https://www.postgresql.org" target="_blank" rel="noreferrer noopener"><img src="https://raw.githubusercontent.com/0xShapeShifter/dev-story/master/public/images/skills/backend/postgresql.svg" alt="PostgreSQL" width="25" height="25" /></a> <a href="https://firebase.google.com" target="_blank" rel="noreferrer noopener"><img src="https://raw.githubusercontent.com/0xShapeShifter/dev-story/master/public/images/skills/backend/firebase.svg" alt="Firebase" width="25" height="25" /></a> <a href="https://supabase.com" target="_blank" rel="noreferrer noopener"><img src="https://raw.githubusercontent.com/0xShapeShifter/dev-story/master/public/images/skills/backend/supabase.svg" alt="Supabase" width="25" height="25" /></a> <a href="http://planetscale.com" target="_blank" rel="noreferrer noopener"><img src="https://raw.githubusercontent.com/0xShapeShifter/dev-story/master/public/images/skills/backend/planetscale.svg" alt="PlanetScale" width="25" height="25" /></a>
+> ### Skills
+
+<a href="https://www.python.org" target="_blank" rel="noreferrer noopener"><img src="https://raw.githubusercontent.com/0xShapeShifter/dev-story/master/public/images/skills/core/python.svg" alt="Python" width="25" height="25" /></a> <a href="https://www.typescriptlang.org" target="_blank" rel="noreferrer noopener"><img src="https://raw.githubusercontent.com/0xShapeShifter/dev-story/master/public/images/skills/core/typescript.svg" alt="Typescript" width="25" height="25" /></a> <a href="https://html.com/html5/" target="_blank" rel="noreferrer noopener"><img src="https://raw.githubusercontent.com/0xShapeShifter/dev-story/master/public/images/skills/frontend/html5.svg" alt="HTML5" width="25" height="25" /></a> <a href="https://vuejs.org" target="_blank" rel="noreferrer noopener"><img src="https://raw.githubusercontent.com/0xShapeShifter/dev-story/master/public/images/skills/frontend/vue.svg" alt="Vue" width="25" height="25" /></a> <a href="https://www.solidjs.com" target="_blank" rel="noreferrer noopener"><img src="https://raw.githubusercontent.com/0xShapeShifter/dev-story/master/public/images/skills/frontend/solidjs.svg" alt="SolidJS" width="25" height="25" /></a> <a href="https://mui.com/material-ui/" target="_blank" rel="noreferrer noopener"><img src="https://raw.githubusercontent.com/0xShapeShifter/dev-story/master/public/images/skills/frontend/mui.svg" alt="Material UI" width="25" height="25" /></a> <a href="http://vitejs.dev/" target="_blank" rel="noreferrer noopener"><img src="https://raw.githubusercontent.com/0xShapeShifter/dev-story/master/public/images/skills/frontend/vite.svg" alt="Vite" width="25" height="25" /></a> <a href="https://nodejs.org" target="_blank" rel="noreferrer noopener"><img src="https://raw.githubusercontent.com/0xShapeShifter/dev-story/master/public/images/skills/backend/nodejs.svg" alt="NodeJS" width="25" height="25" /></a> <a href="http://expressjs.com" target="_blank" rel="noreferrer noopener"><img src="https://raw.githubusercontent.com/0xShapeShifter/dev-story/master/public/images/skills/backend/express.svg" alt="Express" width="25" height="25" /></a> <a href="https://graphql.org" target="_blank" rel="noreferrer noopener"><img src="https://raw.githubusercontent.com/0xShapeShifter/dev-story/master/public/images/skills/backend/graphql.svg" alt="GraphQL" width="25" height="25" /></a> <a href="https://www.mongodb.com" target="_blank" rel="noreferrer noopener"><img src="https://raw.githubusercontent.com/0xShapeShifter/dev-story/master/public/images/skills/backend/mongodb.svg" alt="Mongo DB" width="25" height="25" /></a> <a href="https://www.mysql.com" target="_blank" rel="noreferrer noopener"><img src="https://raw.githubusercontent.com/0xShapeShifter/dev-story/master/public/images/skills/backend/mysql.svg" alt="MySQL" width="25" height="25" /></a> <a href="https://www.postgresql.org" target="_blank" rel="noreferrer noopener"><img src="https://raw.githubusercontent.com/0xShapeShifter/dev-story/master/public/images/skills/backend/postgresql.svg" alt="PostgreSQL" width="25" height="25" /></a> <a href="https://firebase.google.com" target="_blank" rel="noreferrer noopener"><img src="https://raw.githubusercontent.com/0xShapeShifter/dev-story/master/public/images/skills/backend/firebase.svg" alt="Firebase" width="25" height="25" /></a> <a href="https://supabase.com" target="_blank" rel="noreferrer noopener"><img src="https://raw.githubusercontent.com/0xShapeShifter/dev-story/master/public/images/skills/backend/supabase.svg" alt="Supabase" width="25" height="25" /></a> <a href="http://planetscale.com" target="_blank" rel="noreferrer noopener"><img src="https://raw.githubusercontent.com/0xShapeShifter/dev-story/master/public/images/skills/backend/planetscale.svg" alt="PlanetScale" width="25" height="25" /></a>
 
 > ### Languages and Tools
 
@@ -84,12 +171,13 @@
     handcrafted by Bahrain's 🇧🇭 Finest Artisans ⦿ inspired by @doytech
     version 1.0.2023.08.29
 
-    😘 this profile was inspired by several others. https://github.com/elangosundar/awesome-README-templates && https://github.com/abhisheknaiidu/todoist-readme & https://github.com/benjaminsampica/benjaminsampica
-
 ---
 
+<span style="font-size: x-large;">T</span>his profile was inspired by several others. 😘
+<a href="https://github.com/elangosundar/awesome-README-templates">awesome-README</a> && <a href="https://github.com/abhisheknaiidu/todoist-readme" target="_blank">todoist-readme</a> && <a href="https://github.com/benjaminsampica/benjaminsampica" target="_blank">benjaminsampica</a>
+
 <style>
- 
+
  body {
   background-color: #0D0D0D;
   color: #EDEDED;
@@ -124,9 +212,16 @@
  }
 
  .card {
-  display: flex;
-  width: 10vw;
-  height: 15vh;
+   background-color: rgba(0, 0, 0, 0.5);
+   padding: 2em;
+   color: #ffffff;
+   text-align: center;
+   font-size: 30px;
+   min-height: 200px;
+   text-decoration: none;
+   margin: 1em;
+   border-radius: 10px;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
  }
- 
+
 </style>
