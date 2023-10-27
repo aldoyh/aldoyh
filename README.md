@@ -93,6 +93,7 @@
 <details>
 <summary>📮 Social Contacts 📬</summary>
 <br>
+</details>
 
 ## Todoist Stats
 
