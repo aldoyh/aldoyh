@@ -117,34 +117,6 @@
 
 ---
 
-<style>
-
-#grid, .showcase {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-  grid-gap: 15px;
-}
-
-.showcase>a, #grid>div {
-  font-size: 30px;
-  padding: .5em;
-  color: #ffffff;
-  background: rgba(0, 0, 0, 0.5);
-  text-align: center;
-  border-radius: 10px;
-  text-decoration: none;
-}
-
-#grid>.card {
-   background-image: url(https://github.com/aldoyh/aldoyh/blob/main/images/project-bg.png?raw=true);
-   background-size: cover;
-   background-repeat: no-repeat;
-   background-position: top;
-   padding: 1em;
-}
-
-</style>
-
 > ### Super 🔋 Powers
 
 <div class="showcase">
@@ -174,70 +146,68 @@ T</span>his profile was inspired by several others. 😘 <a href="https://github
 
 
 <style>
-
-body {
-background-color: #0D0D0D;
-color: #EDEDED;
-}
-
-a {
-color: #F6660A;
-}
-
-.hero {
-background-image: url(https://github.com/aldoyh/aldoyh/blob/main/images/photoreal_stunning_gaming_wallpaper_0_fbb4ad98-da5e-44a0-a664-9d05a84f39ad.jpg?raw=true);
-background-size: cover;
-min-height: 300px;
-}
-
-.intro {
-   background-image: url(https://github.com/aldoyh/aldoyh/blob/main/images/DreamShaper_v7_by_Hasan_Aldoy_Mastermind2.jpg?raw=true);
-   background-size: cover;
-
-}
-
-.footer {
-   background-image: url(https://github.com/aldoyh/aldoyh/blob/main/images/DreamShaper_v7_by_Hasan_Aldoy_Mastermind.jpg?raw=true);
-   background-size: cover;
-   min-height: 350px;
-}
-
-.footer h1 {
-position: absolute;
-right: 10%;
-
-}
-
-.container {
-display: grid;
-}
-
-.card {
-background-color: rgba(0, 0, 0, 0.5);
-padding: 2em;
-color: #ffffff;
-text-align: center;
-font-size: 30px;
-min-height: 200px;
-text-decoration: none;
-margin: 1em;
-border-radius: 10px;
-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-
-.card:hover {
-   box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
-}
-
-.card a {
-   color: #ffffff;
-   text-decoration: none;
-}
-
-.card a:hover {
+   body {
+   background-color: #0D0D0D;
+   color: #EDEDED;
+   }
+   
+   a {
    color: #F6660A;
+   }
+   
+   .hero {
+   background-image: url(https://github.com/aldoyh/aldoyh/blob/main/images/photoreal_stunning_gaming_wallpaper_0_fbb4ad98-da5e-44a0-a664-9d05a84f39ad.jpg?raw=true);
+   background-size: cover;
+   min-height: 300px;
+   }
+   
+   .intro {
+      background-image: url(https://github.com/aldoyh/aldoyh/blob/main/images/DreamShaper_v7_by_Hasan_Aldoy_Mastermind2.jpg?raw=true);
+      background-size: cover;
+   
+   }
+   
+   .footer {
+      background-image: url(https://github.com/aldoyh/aldoyh/blob/main/images/DreamShaper_v7_by_Hasan_Aldoy_Mastermind.jpg?raw=true);
+      background-size: cover;
+      min-height: 350px;
+   }
+   
+   .footer h1 {
+   position: absolute;
+   right: 10%;
+   
+   }
+   
+   .container {
+   display: grid;
+   }
+   
+   .card {
+   background-color: rgba(0, 0, 0, 0.5);
+   padding: 2em;
+   color: #ffffff;
+   text-align: center;
+   font-size: 30px;
+   min-height: 200px;
    text-decoration: none;
-}
+   margin: 1em;
+   border-radius: 10px;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+   }
+   
+   .card:hover {
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+   }
+   
+   .card a {
+      color: #ffffff;
+      text-decoration: none;
+   }
+   .card a:hover {
+      color: #F6660A;
+      text-decoration: none;
+   }
 
 
 
