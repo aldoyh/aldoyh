@@ -32,6 +32,7 @@
 ## Recent Projects ❤️
 
 <div id="grid">
+   
 <div class="card">
 
 [Undisclosed](https://doy.tech/undisclosed)
@@ -51,9 +52,9 @@
 
 </div>
 <div class="card">
-
+<img src="https://i.ibb.co/tZdn34N/2024-alsarya-tv.png" width="200px" />
 [AlSarya TV Show](https://alsarya.tv)
-<span style="font-size: 0.5em;">2019 - 2022</span>
+<span style="font-size: 0.5em;">2019 - 2023</span>
 
 </div>
 <div class="card">
