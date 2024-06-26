@@ -4,6 +4,8 @@
 
 <h1 align="center">Hi 👋, I'm Hasan AlDoy 🐧</h1>
 
+<img src="https://hugomods.com/images/banners/home.svg" alt="Taken from Hugo Modules Logo" width="100%" height="auto">
+
 <div class="intro" style="font-size: 1.5em; background-color: #0D0D0D; color: #EDEDED;">
 
 <div style="background-color: rgba(0, 0, 0, 0.5); padding: 2em;">
