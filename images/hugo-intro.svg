@@ -1,0 +1,11 @@
+--2024-06-26 12:55:26--  https://hugomods.com/images/banners/home.svg
+Resolving hugomods.com (hugomods.com)... 172.67.159.248, 104.21.41.48
+Connecting to hugomods.com (hugomods.com)|172.67.159.248|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [image/svg+xml]
+Saving to: ‘home.svg’
+
+     0K ....                                                   25.2M=0s
+
+2024-06-26 12:55:27 (25.2 MB/s) - ‘home.svg’ saved [5040]
+
