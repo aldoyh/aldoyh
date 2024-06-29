@@ -2,6 +2,12 @@
 
 <h2 align="center">أنا من البحرين. بحرين العروبة 🇧🇭</h2>
 
+<div align="center">
+   
+   [![committers.top badge](https://user-badge.committers.top/bahrain/aldoyh.svg)](https://user-badge.committers.top/bahrain/aldoyh)
+   
+</div>
+
 <h1 align="center">Hi 👋, I'm Hasan AlDoy 🐧</h1>
 
 <img src="https://hugomods.com/images/banners/home.svg" alt="Taken from Hugo Modules Logo" width="100%" height="auto">
