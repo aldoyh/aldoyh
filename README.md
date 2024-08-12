@@ -149,11 +149,12 @@
 <div class="footer">
 <h1>waves of tech ahead</h1>
 </div>
-
-    this personal profile represents my role as a `sole developer`. Hand-crafted by Bahrain's 🇧🇭 Finest Web Artisans ⦿ inspired by @doytech | version 1.5.2023.09.15 -> 2.2024.05.19
-
+<p align="left">
+this personal profile represents my role as a `sole developer`. Hand-crafted by Bahrain's 🇧🇭 Finest Web Artisans ⦿ inspired by @doytech | version 1.5.2023.09.15 -> 2.2024.05.19
+</p>
+<p align="right" dir="rtl">
     صفحة شخصية لأعمالي الشخصية والإحترافية في كل من القطاع العام والخاص، المهم ليس فيما ستأخذ بل من أين أخذته؟ **حفاظك على المُلكية الفكرية لغيرك هي كافية لحماية حقوقك.**
-
+</p>
 ---
 <span style="font-size: x-large;">
 T</span>his profile was inspired by several others. 😘 <a href="https://github.com/elangosundar/awesome-README-templates">awesome-README</a> && <a href="https://github.com/abhisheknaiidu/todoist-readme" target="_blank">todoist-readme</a> && <a href="https://github.com/benjaminsampica/benjaminsampica" target="_blank">benjaminsampica</a>
