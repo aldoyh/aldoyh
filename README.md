@@ -2,6 +2,9 @@
 
 <h2 align="center">أنا من البحرين. بحرين العروبة 🇧🇭</h2>
 
+<h3 align="center">Code is Poetry</h3>
+<h3 align="center">البرمجة هي شِعر</h3>
+
 <div align="center">
    
    [![committers.top badge](https://user-badge.committers.top/bahrain/aldoyh.svg)](https://user-badge.committers.top/bahrain/aldoyh)
