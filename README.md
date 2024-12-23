@@ -6,6 +6,9 @@
 <h3 align="center">البرمجة هي شِعر</h3>
 
 <div align="center">
+   <h2>Contributions Ranking</h2>
+   
+   [![committers.top badge](https://user-badge.committers.top/bahrain_private/aldoyh.svg)](https://user-badge.committers.top/bahrain_private/aldoyh)
    
    [![committers.top badge](https://user-badge.committers.top/bahrain/aldoyh.svg)](https://user-badge.committers.top/bahrain/aldoyh)
    
