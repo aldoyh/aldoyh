@@ -67,9 +67,13 @@
 ## Recent Projects ❤️
 
 <div id="grid">
-   
-<div class="card">
 
+<div class="card">
+<img src="https://i.ibb.co/tZdn34N/2024-alsarya-tv.png" width="200px" />
+[AlSarya TV Show](https://alsarya.tv)
+<span style="font-size: 1.3em">2019 - 2025</span>
+
+</div>
 [Undisclosed](https://doy.tech/undisclosed)
 <span style="font-size: 0.5em;">2023</span>
 
@@ -86,12 +90,7 @@
 <span style="font-size: 0.5em;">2020</span>
 
 </div>
-<div class="card">
-<img src="https://i.ibb.co/tZdn34N/2024-alsarya-tv.png" width="200px" />
-[AlSarya TV Show](https://alsarya.tv)
-<span style="font-size: 0.5em;">2019 - 2023</span>
 
-</div>
 <div class="card">
 
 [Bahrain TV](https://live.bh)
