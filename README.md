@@ -1,3 +1,8 @@
+<style>
+   #user-profile-frame > div > div.Box.mt-4 > div > article > div:nth-child(5) > p:nth-child(2) > a > img {
+      width: 300px;
+   }
+</style>
 <h1 align="center">حياكم الله بكل خير،<br /> إسمي حسن الدّوي</h1>
 
 <h2 align="center">أنا من البحرين. بحرين العروبة 🇧🇭</h2>
