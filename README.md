@@ -1,7 +1,7 @@
 <!-- Distinctly Unique & Beautiful Profile by Hasan AlDoy -->
 
 <p align="center">
-  <img src="images/hugo-intro.svg" width="180" alt="Hugo Intro"/>
+  <img src="images/revised-branding.png" width="180" alt="Hugo Intro"/>
 </p>
 
 <h1 align="center" style="font-size:3em; letter-spacing:2px; color:#0D0D0D; background: linear-gradient(90deg,#EDEDED,#0D0D0D); border-radius: 1em; padding: 0.5em 0;">قوه..
