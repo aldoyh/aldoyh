@@ -4,14 +4,22 @@
   <img src="images/hugo-intro.svg" width="180" alt="Hugo Intro"/>
 </p>
 
-<h1 align="center" style="font-size:3em; letter-spacing:2px; color:#0D0D0D; background: linear-gradient(90deg,#EDEDED,#0D0D0D); border-radius: 1em; padding: 0.5em 0;">حياكم الله بكل خير،<br />إسمي حسن الدّوي</h1>
+<h1 align="center" style="font-size:3em; letter-spacing:2px; color:#0D0D0D; background: linear-gradient(90deg,#EDEDED,#0D0D0D); border-radius: 1em; padding: 0.5em 0;">قوه..
+  <br />إسمي حسن الدّوي
+</h1>
 
-<p align="center" style="font-size:1.5em; color:#EDEDED; background:#B1002F; border-radius:1em; padding:0.5em 0;">أنا من البحرين. بحرين العروبة 🇧🇭</p>
+<p align="center" style="font-size:1.5em; color:#EDEDED; background:#B1002F; border-radius:1em; padding:0.5em 0;">أنا من البحرين 🇧🇭</p>
+<h1 align="center" style="font-size:3em; letter-spacing:2px; color:#0D0D0D; background: linear-gradient(90deg,#EDEDED,#0D0D0D); border-radius: 1em; padding: 0.5em 0;">Hi..
+  <br />My Name is Hasan AlDoy
+</h1>
+<p align="center" style="color:#EDEDED; background:#B1002F; border-radius:1em; padding:0.5em 0;">I am from Bahrain 🇧🇭</p>
 
 <h2 align="center" style="font-family:monospace; color:#0D0D0D;">Code is <span style="color:#B1002F;">Poetry</span> &mdash; <span style="color:#EDEDED;">Coding is Art</span></h2>
 
 <div align="center">
-  <img src="https://user-badge.committers.top/bahrain_private/aldoyh.svg" alt="Committers Top Bahrain Private"/>
+  <img src="https://user-badge.committers.top/bahrain_private/aldoyh.svg" alt="Committers Top Bahrain Private" width="300" />
+</div>
+<div align="center">
   <img src="https://user-badge.committers.top/bahrain/aldoyh.svg" alt="Committers Top Bahrain"/>
 </div>
 
