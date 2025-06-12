@@ -4,10 +4,6 @@
   <img src="images/revised-branding.png" width="50" alt="doy.tech Logo 2025"/>
 </p>
 
-<p align="center">
-  <img src="images/revised-branding.png" width="50" alt="doy.tech Logo 2025"/>
-</p>
-
 <h1 align="center" style="font-size:3em; letter-spacing:2px; color:#0D0D0D; background: linear-gradient(90deg,#EDEDED,#0D0D0D); border-radius: 1em; padding: 0.5em 0;">قوه..
   <br />إسمي حسن الدّوي
 </h1>
