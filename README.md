@@ -46,7 +46,7 @@
 ## 🚀 GitHub Stats
 
 ![GitHub Stats](https://github-readme-stats.vercel.app/api?username=aldoyh&theme=dark&hide_border=false&include_all_commits=true&count_private=true)
-![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=aldoyh&theme=dark&hide_border=false)
+![GitHub Streak](https://github-readme-streak-stats-lyart-gamma.vercel.app?user=aldoyh&locale=ar&mode=weekly&hide_total_contributions=true)
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=aldoyh&theme=dark&hide_border=false&layout=compact)
 
 ## 🏆 GitHub Trophies
