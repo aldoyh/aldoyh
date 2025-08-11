@@ -80,6 +80,11 @@
 | [Undisclosed](https://doy.tech/undisclosed) | 1996 |
 | [Undisclosed](https://doy.tech/undisclosed) | 2021 |
 
+### 🚀 Frameworks & Libraries
+![Laravel](http://laravel.com)
+
+Note: even if it seems there're other respectful frameworks, compared to the Grand Master of them all **Laravel**, they have no chance next to this. Period.
+
 ---
 
 ## Connect with me
@@ -115,10 +120,6 @@
 [![Dart](https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart)](https://dart.dev)
 [![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript)](https://www.javascript.com)
 [![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php)](https://www.php.net)
-
-[![Built with Codeium](https://codeium.com/badges/main)](https://codeium.com)
-
-I have accepted **2,131** completions in 20 different coding languages using Codeium from [www.codeium.com](https://www.codeium.com)!
 
 ---
 
