@@ -81,7 +81,8 @@
 | [Undisclosed](https://doy.tech/undisclosed) | 2021 |
 
 ### 🚀 Frameworks & Libraries
-![Laravel](http://laravel.com)
+
+[![Laravel](images/LARAVEL.png)](https://laravel.com)
 
 Note: even if it seems there're other respectful frameworks, compared to the Grand Master of them all **Laravel**, they have no chance next to this. Period.
 
