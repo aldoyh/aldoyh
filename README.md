@@ -17,7 +17,9 @@
 <h2 align="center" style="font-family:monospace; color:#0D0D0D;">Code is <span style="color:#B1002F;">Poetry</span> &mdash; <span style="color:#EDEDED;">Coding is Art</span></h2>
 
 <div align="center">
-  <img src="https://user-badge.committers.top/bahrain_private/aldoyh.svg" alt="Committers Top Bahrain Private" width="300" />
+  <a href="https://committers.top/bahrain_private" target="_blank">
+    <img src="https://user-badge.committers.top/bahrain_private/aldoyh.svg" alt="Committers Top Bahrain Private" width="300" />
+  </a>
 </div>
 <div align="center">
   <img src="https://user-badge.committers.top/bahrain/aldoyh.svg" alt="Committers Top Bahrain"/>
