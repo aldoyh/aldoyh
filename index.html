@@ -1,0 +1,159 @@
+---
+redirect_from: /README/
+permalink: /
+title: "Hasan AlDoy | Full Stack Developer & Broadcaster"
+description: "Apache Royale Penguin 🐧 Wandering the Arabian Desert. Full Stack AI Prompter Engineer & Senior Broadcast Engineer from Bahrain 🇧🇭"
+image: /images/revised-branding.png
+---
+
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    {% seo %}
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="{{ '/images/revised-branding.png' | relative_url }}">
+    <link rel="apple-touch-icon" href="{{ '/images/revised-branding.png' | relative_url }}">
+    
+    <!-- Custom Styles for GitHub-like appearance -->
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+            line-height: 1.6;
+            color: #24292f;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            margin: 0;
+            padding: 20px;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: #ffffff;
+            border-radius: 12px;
+            padding: 40px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+            backdrop-filter: blur(10px);
+        }
+        h1, h2, h3 {
+            border-bottom: 2px solid #e1e4e8;
+            padding-bottom: 12px;
+            margin-top: 32px;
+        }
+        h1 {
+            color: #0366d6;
+        }
+        h2 {
+            color: #0366d6;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .center, [align="center"] {
+            text-align: center;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 24px 0;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        th, td {
+            border: 1px solid #d0d7de;
+            padding: 12px 16px;
+            text-align: left;
+        }
+        th {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            font-weight: 600;
+        }
+        blockquote {
+            border-left: 4px solid #0366d6;
+            padding-left: 20px;
+            margin-left: 0;
+            color: #586069;
+            background: #f6f8fa;
+            padding: 16px 20px;
+            border-radius: 6px;
+            margin: 16px 0;
+        }
+        code, pre {
+            background-color: #f6f8fa;
+            border-radius: 6px;
+            padding: 4px 8px;
+            font-family: 'SFMono-Regular', 'Monaco', 'Inconsolata', monospace;
+        }
+        /* Badge styling improvements */
+        img[alt*="badge"], img[src*="shield"] {
+            display: inline-block;
+            margin: 2px;
+        }
+        
+        /* Responsive design */
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            .container {
+                padding: 20px;
+                border-radius: 8px;
+            }
+            table {
+                font-size: 14px;
+            }
+            th, td {
+                padding: 8px 12px;
+            }
+        }
+        
+        /* Dark mode media query */
+        @media (prefers-color-scheme: dark) {
+            body {
+                background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+            }
+            .container {
+                background: #1a1a1a;
+                color: #e6e6e6;
+            }
+            h1, h2, h3 {
+                color: #58a6ff;
+                border-bottom-color: #30363d;
+            }
+            blockquote {
+                background: #21262d;
+                color: #8b949e;
+                border-left-color: #58a6ff;
+            }
+            code, pre {
+                background-color: #21262d;
+                color: #e6e6e6;
+            }
+            th {
+                background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+            }
+            td {
+                border-color: #30363d;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        {% capture readme_content %}{% include_relative README.md %}{% endcapture %}
+        {{ readme_content | markdownify }}
+    </div>
+    
+    <!-- Analytics (placeholder for future use) -->
+    {% if jekyll.environment == 'production' %}
+    <!-- Add analytics script here when needed -->
+    {% endif %}
+</body>
+</html>

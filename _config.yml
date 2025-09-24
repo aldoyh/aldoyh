@@ -1,0 +1,87 @@
+# GitHub Pages Configuration for aldoyh Profile
+title: "Hasan AlDoy | Full Stack Developer & Broadcaster"
+description: "Apache Royale Penguin 🐧 Wandering the Arabian Desert. Full Stack AI Prompter Engineer & Senior Broadcast Engineer from Bahrain 🇧🇭"
+author: "Hasan AlDoy"
+url: "https://h.aldoy.net"
+baseurl: ""
+
+# SEO and Social Media
+lang: en
+locale: en_US
+timezone: Asia/Bahrain
+
+twitter:
+  username: aldoyh
+  card: summary_large_image
+
+social:
+  name: Hasan AlDoy
+  links:
+    - https://twitter.com/aldoyh
+    - https://instagram.com/aldoyh
+    - https://doy.tech
+    - https://github.com/aldoyh
+
+logo: "/images/revised-branding.png"
+image: "/images/revised-branding.png"
+
+# GitHub Pages specific settings
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-redirect-from
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+
+kramdown:
+  input: GFM
+  hard_wrap: false
+  syntax_highlighter: rouge
+
+# Sass/SCSS configuration
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# Exclude files from build
+exclude:
+  - README_v2.md
+  - report.html
+  - techstack.yml
+  - "*.log"
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .sass-cache
+  - .jekyll-cache
+  - gemfiles
+  - package*.json
+  - "*.gemspec"
+  - .git
+  - .github
+  - .gitignore
+
+# Include files that start with underscores
+include:
+  - .well-known
+  - .htaccess
+
+# GitHub Metadata
+repository: aldoyh/aldoyh
+github:
+  owner_name: aldoyh
+  owner_url: https://github.com/aldoyh
+
+# Navigation (if needed)
+navigation:
+  - title: Home
+    url: /
+  - title: GitHub
+    url: https://github.com/aldoyh
+  - title: Portfolio
+    url: https://doy.tech

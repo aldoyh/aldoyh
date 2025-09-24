@@ -1,0 +1,16 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://h.aldoy.net/sitemap.xml
+
+# Crawl Delay
+Crawl-delay: 1
+
+# Disallow unnecessary paths
+Disallow: /.git/
+Disallow: /.github/
+Disallow: /node_modules/
+Disallow: /_site/
+Disallow: /README_v2.md
+Disallow: /report.html
