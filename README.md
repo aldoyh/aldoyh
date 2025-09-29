@@ -142,14 +142,15 @@
 
 <div align="center">
 
-[![Portfolio](https://img.shields.io/badge/Portfolio-doy.tech-FF5722?style=for-the-badge&logo=google-chrome&logoColor=white)](https://doy.tech)
-[![Email](https://img.shields.io/badge/Email-hellos@doy.tech-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:hellos@doy.tech)
-[![Twitter](https://img.shields.io/badge/Twitter-aldoyh-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/aldoyh)
-[![Instagram](https://img.shields.io/badge/Instagram-aldoyh-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://instagram.com/aldoyh)
+<a href="https://doy.tech"><img src="https://img.shields.io/badge/Portfolio-doy.tech-FF5722?style=for-the-badge&logo=google-chrome&logoColor=white" alt="Portfolio"></a>
+<a href="mailto:hellos@doy.tech"><img src="https://img.shields.io/badge/Email-hellos@doy.tech-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"></a>
+<a href="https://twitter.com/aldoyh"><img src="https://img.shields.io/badge/Twitter-aldoyh-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" alt="Twitter"></a>
+<a href="https://instagram.com/aldoyh"><img src="https://img.shields.io/badge/Instagram-aldoyh-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram"></a>
 
-### 📱 **Social Stats**
-[![GitHub followers](https://img.shields.io/github/followers/aldoyh?style=social&label=Follow%20@aldoyh)](https://github.com/aldoyh)
-[![Twitter Follow](https://img.shields.io/twitter/follow/aldoyh?style=social)](https://twitter.com/aldoyh)
+<h3>📱 <strong>Social Stats</strong></h3>
+
+<a href="https://github.com/aldoyh"><img src="https://img.shields.io/github/followers/aldoyh?style=social&label=Follow%20@aldoyh" alt="GitHub followers"></a>
+<a href="https://twitter.com/aldoyh"><img src="https://img.shields.io/twitter/follow/aldoyh?style=social" alt="Twitter Follow"></a>
 
 </div>
 
@@ -197,15 +198,17 @@
 
 <div align="center">
 
-**Hand-crafted by Bahrain's 🇧🇭 Finest Web Artisans** ⦿ **inspired by @doytech** | **version 3.2025.01.23**
+<p><strong>Hand-crafted by Bahrain's 🇧🇭 Finest Web Artisans</strong> ⦿ <strong>inspired by @doytech</strong> | <strong>version 3.2025.01.23</strong></p>
 
-> *صفحة شخصية لأعمالي الشخصية والإحترافية في كل من القطاع العام والخاص، المهم ليس فيما ستأخذ بل من أين أخذته؟* **حفاظك على المُلكية الفكرية لغيرك هي كافية لحماية حقوقك.**
+<blockquote>
+<p><em>صفحة شخصية لأعمالي الشخصية والإحترافية في كل من القطاع العام والخاص، المهم ليس فيما ستأخذ بل من أين أخذته؟</em> <strong>حفاظك على المُلكية الفكرية لغيرك هي كافية لحماية حقوقك.</strong></p>
+</blockquote>
 
-### 🙏 **Acknowledgments**
+<h3>🙏 <strong>Acknowledgments</strong></h3>
 
-This profile was inspired by several talented developers:  
-[awesome-README](https://github.com/elangosundar/awesome-README-templates) • 
-[todoist-readme](https://github.com/abhisheknaiidu/todoist-readme) • 
-[benjaminsampica](https://github.com/benjaminsampica/benjaminsampica)
+<p>This profile was inspired by several talented developers:<br>
+<a href="https://github.com/elangosundar/awesome-README-templates">awesome-README</a> • 
+<a href="https://github.com/abhisheknaiidu/todoist-readme">todoist-readme</a> • 
+<a href="https://github.com/benjaminsampica/benjaminsampica">benjaminsampica</a></p>
 
 </div>
