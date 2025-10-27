@@ -24,6 +24,7 @@
   Creating Live TV Interactive Games & Dynamic Info Systems Since 2001
 </h4>
 
+<small>built an airplane while jumping of a cliff, when reached the ground it was a VAN! **AI Generated Plan**</small>
 <hr /> 
 
 <div align="center">
