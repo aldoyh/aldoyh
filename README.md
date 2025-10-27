@@ -23,8 +23,7 @@
 <h4 align="center" style="margin-bottom: 10px">
   Creating Live TV Interactive Games & Dynamic Info Systems Since 2001
 </h4>
-
-<small align="center" style="margin-bottom: 10px">built an airplane while jumping of a cliff, when reached the ground it was a VAN! **AI Generated Plan**</small>
+  
 
 <hr /> 
 
@@ -51,6 +50,8 @@
 ### 🚀 **Apache Royale Penguin 🐧 Wandering the Arabian Desert**
 
 🌍 **Born in [R.A.K.](https://visitrasalkhaimah.com), raised in the greatest Island [Kingdom of Bahrain](https://bahrain.com)**
+
+> built an airplane while jumping of a cliff, when reached the ground it was a VAN! (AI Generated Plan)
 
 ### 💼 **Professional Journey**
 - 🤖 **Full Stack AI Prompter Engineer** (2023): ChatGPT | DALL-E | Stability.ai | Replicate | Certified OpenAI Engineer
