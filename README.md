@@ -23,8 +23,10 @@
 <h4 align="center" style="margin-bottom: 10px">
   Creating Live TV Interactive Games & Dynamic Info Systems Since 2001
 </h4>
+<center>
+  <small>built an airplane while jumping of a cliff, when reached the ground it was a VAN! **AI Generated Plan**</small>
+</center>
 
-<small>built an airplane while jumping of a cliff, when reached the ground it was a VAN! **AI Generated Plan**</small>
 <hr /> 
 
 <div align="center">
