@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Realistic Matrix Code Effect</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400&display=swap');
+
+        body {
+            font-family: Tajawal, sans-serif;
+            font-size: 2rem;
+            color: #00ff00;
+            background-color: black;
+            overflow: hidden;
+        }
+
+        #container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            font-size: 5rem;
+            color: #ffffff;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 5em;
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+            z-index: 1;
+        }
+
+        canvas {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container"
+        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; font-size:5rem; color: #ffffff; margin-left: auto; margin-right: auto; margin-top: 5em; text-align: center; font-family: 'Courier New', Courier, monospace; z-index: 1;">
+        <div id="matrixText" text-split letters-slide-up>
+            Hello Neo, welcome to the Matrix.
+        </div>
+        <div id="matrixText2" text-split words-rotate-in>
+            The Matrix has you...
+        </div>
+        <div id="matrixText3" text-split words-slide-from-right>
+            Follow the white rabbit.
+        </div>
+        <div id="matrixText4" text-split letters-fade-in-random>
+            Knock, knock, knock...
+        </div>
+    </div>
+    <canvas id="matrixCanvas"></canvas>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/TextPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/timothydesign/script/split-type.js"></script>
+    <script>
+    window.addEventListener("DOMContentLoaded", (event) => {
+      // Split text into spans
+      let typeSplit = new SplitType("[text-split]", {
+        types: "words, chars",
+        tagName: "span"
+      });
+
+      // Helper to show only one sentence at a time
+      const sentences = [
+        document.getElementById('matrixText'),
+        document.getElementById('matrixText2'),
+        document.getElementById('matrixText3'),
+        document.getElementById('matrixText4')
+      ];
+      sentences.forEach(el => el.style.opacity = 0);
+
+      function showSentence(index) {
+        sentences.forEach((el, i) => {
+          el.style.opacity = i === index ? 1 : 0;
+        });
+      }
+
+      // Animate each word in the sentence
+      function animateWords(sentenceEl, onComplete) {
+        const words = sentenceEl.querySelectorAll('.word');
+        gsap.set(words, { opacity: 0 });
+        gsap.to(words, {
+          opacity: 1,
+          duration: 0.5,
+          stagger: 0.5,
+          onComplete: onComplete
+        });
+      }
+
+      // Timeline to show each sentence, then animate its words
+      let current = 0;
+      function nextSentence() {
+        showSentence(current);
+        animateWords(sentences[current], () => {
+          setTimeout(() => {
+            gsap.to(sentences[current], { opacity: 0, duration: 0.5 });
+            current = (current + 1) % sentences.length;
+            setTimeout(nextSentence, 500);
+          }, 1200);
+        });
+      }
+      nextSentence();
+
+      // Link timelines to scroll position
+      function createScrollTrigger(triggerElement, timeline) {
+        // Reset tl when scroll out of view past bottom of screen
+        ScrollTrigger.create({
+          trigger: triggerElement,
+          start: "top bottom",
+          onLeaveBack: () => {
+            timeline.progress(0);
+            timeline.pause();
+          }
+        });
+        // Play tl when scrolled into view (60% from top of screen)
+        ScrollTrigger.create({
+          trigger: triggerElement,
+          start: "top 60%",
+          onEnter: () => timeline.play()
+        });
+      }
+
+      $("[words-slide-up]").each(function (index) {
+        let tl = gsap.timeline({ paused: true });
+        tl.from($(this).find(".word"), { opacity: 0, yPercent: 100, duration: 0.5, ease: "back.out(2)", stagger: { amount: 0.5 } });
+        createScrollTrigger($(this), tl);
+      });
+
+      $("[words-rotate-in]").each(function (index) {
+        let tl = gsap.timeline({ paused: true });
+        tl.set($(this).find(".word"), { transformPerspective: 1000 });
+        tl.from($(this).find(".word"), { rotationX: -90, duration: 0.6, ease: "power2.out", stagger: { amount: 0.6 } });
+        createScrollTrigger($(this), tl);
+      });
+
+      $("[words-slide-from-right]").each(function (index) {
+        let tl = gsap.timeline({ paused: true });
+        tl.from($(this).find(".word"), { opacity: 0, x: "1em", duration: 0.6, ease: "power2.out", stagger: { amount: 0.2 } });
+        createScrollTrigger($(this), tl);
+      });
+
+      $("[letters-slide-up]").each(function (index) {
+        let tl = gsap.timeline({ paused: true });
+        tl.from($(this).find(".char"), { yPercent: 100, duration: 0.2, ease: "power1.out", stagger: { amount: 0.6 } });
+        createScrollTrigger($(this), tl);
+      });
+
+      $("[letters-slide-down]").each(function (index) {
+        let tl = gsap.timeline({ paused: true });
+        tl.from($(this).find(".char"), { yPercent: -120, duration: 0.3, ease: "power1.out", stagger: { amount: 0.7 } });
+        createScrollTrigger($(this), tl);
+      });
+
+      $("[letters-fade-in]").each(function (index) {
+        let tl = gsap.timeline({ paused: true });
+        tl.from($(this).find(".char"), { opacity: 0, duration: 0.2, ease: "power1.out", stagger: { amount: 0.8 } });
+        createScrollTrigger($(this), tl);
+      });
+
+      $("[letters-fade-in-random]").each(function (index) {
+        let tl = gsap.timeline({ paused: true });
+        tl.from($(this).find(".char"), { opacity: 0, duration: 0.05, ease: "power1.out", stagger: { amount: 0.4, from: "random" } });
+        createScrollTrigger($(this), tl);
+      });
+
+      $("[scrub-each-word]").each(function (index) {
+        let tl = gsap.timeline({
+          scrollTrigger: {
+            trigger: $(this),
+            start: "top 90%",
+            end: "top center",
+            scrub: true
+          }
+        });
+        tl.from($(this).find(".word"), { opacity: 0.2, duration: 0.2, ease: "power1.out", stagger: { each: 0.4 } });
+      });
+
+      // Avoid flash of unstyled content
+      gsap.set("[text-split]", { opacity: 1 });
+    });
+        const canvas = document.getElementById('matrixCanvas');
+        const ctx = canvas.getContext('2d');
+
+        let width = window.innerWidth;
+        let height = window.innerHeight;
+        canvas.width = width;
+        canvas.height = height;
+
+        const fontSize = 18;
+        const columns = Math.floor(width / fontSize);
+        // Here's how to change the characters to Arabic letters-fade-in-random
+        // const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789~!@#$%^&*()_+=-`[]\{}|;\':",./<>?';
+        const characters = 'أبپتثجچحخدذرزژسشصضطظعغفقكلمنوهیئآئءؤ';
+        const drops = [];
+
+        class Drop {
+            constructor(x) {
+                this.x = x;
+                this.y = -fontSize * Math.random() * 10;
+                this.speed = gsap.utils.random(5, 15);
+                this.value = getRandomCharacter();
+                this.opacity = gsap.utils.random(0.2, 1);
+                this.color = `rgba(0, 255, 0, ${this.opacity})`;
+            }
+
+            draw() {
+                ctx.fillStyle = this.color;
+                ctx.font = `${fontSize}px monospace`;
+                ctx.fillText(this.value, this.x, this.y);
+            }
+
+            update() {
+                this.y += this.speed;
+                this.opacity = gsap.utils.clamp(0, 1, 1 - (this.y / height));
+                this.color = `rgba(0, 255, 0, ${this.opacity})`;
+                this.value = Math.random() < 0.05 ? getRandomCharacter() : this.value; // Occasional character change
+
+                if (this.y > height + fontSize) {
+                    this.y = -fontSize * gsap.utils.random(5, 20);
+                    this.speed = gsap.utils.random(1, 5);
+                    this.opacity = gsap.utils.random(0.2, .8);
+                    this.color = `rgba(0, 255, 0, ${this.opacity})`;
+                    this.value = getRandomCharacter();
+                }
+            }
+        }
+
+        function getRandomCharacter() {
+            return characters.charAt(Math.floor(Math.random() * characters.length));
+        }
+
+        for (let i = 0; i < columns; i++) {
+            drops.push(new Drop(i * fontSize));
+        }
+
+        function animate() {
+            ctx.fillStyle = 'rgba(0, 0, 0, 0.1)';
+            ctx.fillRect(0, 0, width, height);
+
+            drops.forEach(drop => {
+                drop.update();
+                drop.draw();
+            });
+
+            requestAnimationFrame(animate);
+        }
+
+        window.addEventListener('resize', () => {
+            width = window.innerWidth;
+            height = window.innerHeight;
+            canvas.width = width;
+            canvas.height = height;
+            const newColumns = Math.floor(width / fontSize);
+            if (newColumns > columns) {
+                for (let i = columns; i < newColumns; i++) {
+                    drops.push(new Drop(i * fontSize));
+                }
+            } else if (newColumns < columns) {
+                drops.length = newColumns;
+            }
+        });
+
+        // Initial fade-in for the text and start animation
+        animate();
+    </script>
+</body>
+
+</html>
