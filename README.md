@@ -1,7 +1,7 @@
 <!-- Distinctly Unique & Beautiful Profile by Hasan AlDoy -->
 
 <div align="center">
-  <img src="images/doytech-logo.png" width="80" alt="doy.tech Logo 2025"/>
+  <img src="logos-n-beyond/doy-tech-powered.png" width="80" alt="doy.tech Logo 2025"/>
 </div>
 
 <h1 align="center">
