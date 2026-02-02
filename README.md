@@ -23,7 +23,6 @@
 <h4 align="center" style="margin-bottom: 10px">
   Creating Live TV Interactive Games & Dynamic Info Systems Since 2001
 </h4>
-  
 
 <hr /> 
 
