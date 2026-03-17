@@ -101,7 +101,7 @@
 
 ### 🏆 **GitHub Achievements**
 <div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=aldoyh&theme=tokyonight&no-frame=false&no-bg=false&margin-w=4&row=2&column=3"/>
+  <img src="https://github-profile-trophy-tawny.vercel.app/?username=aldoyh&theme=tokyonight&no-frame=false&no-bg=false&margin-w=4&row=2&column=3"/>
 </div>
 
 ### 📈 **Contribution Activity**
