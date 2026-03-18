@@ -144,6 +144,12 @@
             cursor: pointer;
         }
 
+        .mobile-menu-btn:focus-visible {
+            outline: 2px solid var(--primary-color);
+            outline-offset: 2px;
+            border-radius: 4px;
+        }
+
         /* Main content */
         main {
             margin-top: 80px;
@@ -427,6 +433,11 @@
             box-shadow: var(--box-shadow);
         }
 
+        .theme-toggle:focus-visible {
+            outline: 2px solid var(--primary-color);
+            outline-offset: 2px;
+        }
+
         /* Responsive design */
         @media (max-width: 992px) {
             .section-content h1 {
@@ -524,7 +535,7 @@
                 ELEMENTS
             </a>
 
-            <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle navigation menu" aria-expanded="false">
+            <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle navigation menu" title="Toggle navigation menu" aria-expanded="false">
                 <i class="fas fa-bars"></i>
             </button>
 
@@ -584,17 +595,17 @@
     </main>
 
     <!-- Theme Toggle -->
-    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark/light mode">
+    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark/light mode" title="Toggle dark/light mode">
         <i class="fas fa-moon"></i>
     </button>
 
     <!-- Footer -->
     <footer>
         <div class="social-icons">
-            <a href="#" aria-label="Follow us on Facebook"><i class="fab fa-facebook-f"></i></a>
-            <a href="#" aria-label="Follow us on Twitter"><i class="fab fa-twitter"></i></a>
-            <a href="#" aria-label="Follow us on Instagram"><i class="fab fa-instagram"></i></a>
-            <a href="#" aria-label="Connect with us on LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" aria-label="Follow us on Facebook" title="Follow us on Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Follow us on Twitter" title="Follow us on Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Follow us on Instagram" title="Follow us on Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Connect with us on LinkedIn" title="Connect with us on LinkedIn"><i class="fab fa-linkedin-in"></i></a>
         </div>
         <p class="copyright">© 2025 Elements of Life. All rights reserved.</p>
     </footer>
@@ -679,10 +690,12 @@
                     themeIcon.classList.remove('fa-moon');
                     themeIcon.classList.add('fa-sun');
                     themeToggle.setAttribute('aria-label', 'Switch to dark mode');
+                    themeToggle.setAttribute('title', 'Switch to dark mode');
                 } else {
                     themeIcon.classList.remove('fa-sun');
                     themeIcon.classList.add('fa-moon');
                     themeToggle.setAttribute('aria-label', 'Switch to light mode');
+                    themeToggle.setAttribute('title', 'Switch to light mode');
                 }
             });
 
@@ -739,6 +752,7 @@
             scrollToTopBtn.className = 'theme-toggle';
             scrollToTopBtn.id = 'scroll-to-top';
             scrollToTopBtn.setAttribute('aria-label', 'Scroll to top');
+            scrollToTopBtn.setAttribute('title', 'Scroll to top');
             scrollToTopBtn.style.bottom = '8rem';
             scrollToTopBtn.style.display = 'none';
             document.body.appendChild(scrollToTopBtn);
