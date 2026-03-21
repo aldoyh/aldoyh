@@ -142,6 +142,12 @@
             color: var(--text-color);
             font-size: 1.5rem;
             cursor: pointer;
+            border-radius: 4px;
+        }
+
+        .mobile-menu-btn:focus-visible {
+            outline: 2px solid var(--primary-color);
+            outline-offset: 4px;
         }
 
         /* Main content */
@@ -425,6 +431,12 @@
         .theme-toggle:hover {
             transform: scale(1.1);
             box-shadow: var(--box-shadow);
+        }
+
+        .theme-toggle:focus-visible {
+            outline: 2px solid var(--primary-color);
+            outline-offset: 4px;
+            box-shadow: var(--glow);
         }
 
         /* Responsive design */
@@ -740,14 +752,20 @@
             scrollToTopBtn.id = 'scroll-to-top';
             scrollToTopBtn.setAttribute('aria-label', 'Scroll to top');
             scrollToTopBtn.style.bottom = '8rem';
-            scrollToTopBtn.style.display = 'none';
+            scrollToTopBtn.style.opacity = '0';
+            scrollToTopBtn.style.visibility = 'hidden';
+            scrollToTopBtn.style.pointerEvents = 'none';
             document.body.appendChild(scrollToTopBtn);
 
             window.addEventListener('scroll', function() {
                 if (window.pageYOffset > 300) {
-                    scrollToTopBtn.style.display = 'flex';
+                    scrollToTopBtn.style.opacity = '1';
+                    scrollToTopBtn.style.visibility = 'visible';
+                    scrollToTopBtn.style.pointerEvents = 'auto';
                 } else {
-                    scrollToTopBtn.style.display = 'none';
+                    scrollToTopBtn.style.opacity = '0';
+                    scrollToTopBtn.style.visibility = 'hidden';
+                    scrollToTopBtn.style.pointerEvents = 'none';
                 }
             });
 
