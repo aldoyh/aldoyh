@@ -1,0 +1,3 @@
+## 2024-05-15 - Skip Link z-index Overlaps
+**Learning:** Sticky or fixed headers typically use high z-indices (like 1000) to stay above scrollable content. If a "Skip to Content" link isn't explicitly given an even higher z-index (e.g., 1001), it will get hidden beneath the header when tabbing into focus, making it invisible to sighted keyboard users.
+**Action:** Always ensure absolute/fixed positioned interactive a11y overlays (like skip links) have a `z-index` higher than the site's top-level layout components.
