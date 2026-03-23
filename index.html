@@ -532,12 +532,12 @@
     <header id="main-header">
         <nav class="navbar" role="navigation" aria-label="Main navigation">
             <a href="#home" class="logo" aria-label="Elements of Life Home">
-                <i class="fas fa-water"></i>
+                <i class="fas fa-water" aria-hidden="true"></i>
                 ELEMENTS
             </a>
 
-            <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle navigation menu" aria-expanded="false">
-                <i class="fas fa-bars"></i>
+            <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle navigation menu" title="Toggle navigation menu" aria-expanded="false">
+                <i class="fas fa-bars" aria-hidden="true"></i>
             </button>
 
             <div class="nav-links" id="nav-links">
@@ -596,17 +596,17 @@
     </main>
 
     <!-- Theme Toggle -->
-    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark/light mode">
-        <i class="fas fa-moon"></i>
+    <button class="theme-toggle" id="theme-toggle" aria-label="Switch to light mode" title="Switch to light mode">
+        <i class="fas fa-moon" aria-hidden="true"></i>
     </button>
 
     <!-- Footer -->
     <footer>
         <div class="social-icons">
-            <a href="#" aria-label="Follow us on Facebook"><i class="fab fa-facebook-f"></i></a>
-            <a href="#" aria-label="Follow us on Twitter"><i class="fab fa-twitter"></i></a>
-            <a href="#" aria-label="Follow us on Instagram"><i class="fab fa-instagram"></i></a>
-            <a href="#" aria-label="Connect with us on LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" aria-label="Follow us on Facebook" title="Follow us on Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+            <a href="#" aria-label="Follow us on Twitter" title="Follow us on Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+            <a href="#" aria-label="Follow us on Instagram" title="Follow us on Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+            <a href="#" aria-label="Connect with us on LinkedIn" title="Connect with us on LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
         </div>
         <p class="copyright">© 2025 Elements of Life. All rights reserved.</p>
     </footer>
@@ -691,10 +691,12 @@
                     themeIcon.classList.remove('fa-moon');
                     themeIcon.classList.add('fa-sun');
                     themeToggle.setAttribute('aria-label', 'Switch to dark mode');
+                    themeToggle.setAttribute('title', 'Switch to dark mode');
                 } else {
                     themeIcon.classList.remove('fa-sun');
                     themeIcon.classList.add('fa-moon');
                     themeToggle.setAttribute('aria-label', 'Switch to light mode');
+                    themeToggle.setAttribute('title', 'Switch to light mode');
                 }
             });
 
@@ -747,10 +749,11 @@
 
             // Add scroll-to-top functionality
             const scrollToTopBtn = document.createElement('button');
-            scrollToTopBtn.innerHTML = '<i class="fas fa-arrow-up"></i>';
+            scrollToTopBtn.innerHTML = '<i class="fas fa-arrow-up" aria-hidden="true"></i>';
             scrollToTopBtn.className = 'theme-toggle';
             scrollToTopBtn.id = 'scroll-to-top';
             scrollToTopBtn.setAttribute('aria-label', 'Scroll to top');
+            scrollToTopBtn.setAttribute('title', 'Scroll to top');
             scrollToTopBtn.style.bottom = '8rem';
             scrollToTopBtn.style.opacity = '0';
             scrollToTopBtn.style.visibility = 'hidden';
