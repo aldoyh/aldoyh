@@ -1,0 +1,3 @@
+## 2025-01-24 - Accessibility Overlays and Sticky Header Constraints
+**Learning:** The application features a fixed sticky header with a `z-index` of 1000. Any accessibility overlays or focusable elements that must appear visually above the content, such as skip-to-content links, must use a `z-index` of 1001 or higher. Otherwise, when focused, they may be hidden behind the sticky header, failing their accessibility purpose.
+**Action:** Always verify the computed `z-index` when adding or modifying skip links, tooltips, or any accessibility elements intended to overlay the main content, ensuring they explicitly declare `z-index: 1001` (or appropriate) to sit above the sticky header context.
