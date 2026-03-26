@@ -52,10 +52,15 @@
             text-decoration: none;
             border-radius: 4px;
             transition: top 0.3s;
+            z-index: 1001;
         }
 
         .skip-link:focus {
             top: 6px;
+        }
+
+        #main-content:focus {
+            outline: none;
         }
 
         /* Header and Navigation */
@@ -555,7 +560,7 @@
         </nav>
     </header>
 
-    <main id="main-content">
+    <main id="main-content" tabindex="-1">
         <!-- Water Section -->
         <section id="water" class="water-section" aria-labelledby="water-heading">
             <div class="element-bg"></div>

@@ -1,0 +1,3 @@
+## 2024-05-24 - Accessibility Skip Link Hidden Under Sticky Header
+**Learning:** Skip-to-content accessibility links can be accidentally hidden when focused if a sticky or fixed header exists with a higher `z-index`. The application's sticky header uses `z-index: 1000`.
+**Action:** Always verify `z-index` of absolute or fixed accessibility overlays (like skip links) against other fixed elements (like headers). Set the skip link `z-index` to 1001 or higher when there's a header with `z-index: 1000`. Also ensure the target `<main>` element has `tabindex="-1"` and `outline: none;` on focus so the screen reader/keyboard user can transfer focus cleanly without an ugly outline.
