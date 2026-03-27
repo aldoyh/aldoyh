@@ -1,0 +1,3 @@
+## 2024-03-27 - Skip Link Obscured by Sticky Header
+**Learning:** In this application, the sticky header uses a `z-index` of `1000`. Accessibility overlays, specifically the skip-to-content link which drops down from the top of the page on focus, can be obscured by this sticky header if they lack an adequate `z-index`.
+**Action:** When adding or modifying accessibility overlays or new UI elements that need to appear above the sticky header (like skip links or tooltips near the top of the viewport), ensure they are given a `z-index` of `1001` or higher to guarantee visibility.
