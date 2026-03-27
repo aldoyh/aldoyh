@@ -46,6 +46,7 @@
             position: absolute;
             top: -40px;
             left: 6px;
+            z-index: 1001;
             background: var(--primary-color);
             color: white;
             padding: 8px;
@@ -57,6 +58,10 @@
 
         .skip-link:focus {
             top: 6px;
+        }
+
+        #main-content:focus {
+            outline: none;
         }
 
         /* Header and Navigation */
@@ -149,6 +154,12 @@
         .mobile-menu-btn:focus-visible {
             outline: 2px solid var(--primary-color);
             outline-offset: 4px;
+        }
+
+        .mobile-menu-btn:focus-visible {
+            outline: 2px solid var(--primary-color);
+            outline-offset: 2px;
+            border-radius: 4px;
         }
 
         /* Main content */
@@ -550,7 +561,7 @@
         </nav>
     </header>
 
-    <main id="main-content">
+    <main id="main-content" tabindex="-1">
         <!-- Water Section -->
         <section id="water" class="water-section" aria-labelledby="water-heading">
             <div class="element-bg"></div>
