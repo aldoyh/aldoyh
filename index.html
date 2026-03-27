@@ -60,6 +60,10 @@
             top: 6px;
         }
 
+        #main-content:focus {
+            outline: none;
+        }
+
         /* Header and Navigation */
         header {
             position: fixed;
@@ -557,7 +561,7 @@
         </nav>
     </header>
 
-    <main id="main-content">
+    <main id="main-content" tabindex="-1">
         <!-- Water Section -->
         <section id="water" class="water-section" aria-labelledby="water-heading">
             <div class="element-bg"></div>

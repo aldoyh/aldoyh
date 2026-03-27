@@ -1,3 +1,3 @@
-## 2026-03-25 - Sticky Header z-index Interference with Skip Links
-**Learning:** The sticky header in this app has a `z-index: 1000`. Accessibility overlays, such as skip-to-content links that animate into view from the top, can be hidden underneath this header unless given an explicit, higher z-index, which prevents them from being visible to sighted keyboard users.
-**Action:** Always ensure that accessibility overlays and hidden-until-focused elements (like skip links) have a `z-index` of 1001 or higher so they appear above the sticky header.
+## 2024-05-24 - Accessibility Skip Link Hidden Under Sticky Header
+**Learning:** Skip-to-content accessibility links can be accidentally hidden when focused if a sticky or fixed header exists with a higher `z-index`. The application's sticky header uses `z-index: 1000`.
+**Action:** Always verify `z-index` of absolute or fixed accessibility overlays (like skip links) against other fixed elements (like headers). Set the skip link `z-index` to 1001 or higher when there's a header with `z-index: 1000`. Also ensure the target `<main>` element has `tabindex="-1"` and `outline: none;` on focus so the screen reader/keyboard user can transfer focus cleanly without an ugly outline.
