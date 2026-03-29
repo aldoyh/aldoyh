@@ -688,6 +688,10 @@
                             top: targetElement.offsetTop - 80, // Account for fixed header
                             behavior: 'smooth'
                         });
+
+                        // Set focus to the target element for accessibility
+                        targetElement.setAttribute('tabindex', '-1');
+                        targetElement.focus({ preventScroll: true });
                     }
                 });
             });
