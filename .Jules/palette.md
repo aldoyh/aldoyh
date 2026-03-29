@@ -1,3 +1,7 @@
 ## 2025-01-24 - Accessibility Overlays and Sticky Header Constraints
 **Learning:** The application features a fixed sticky header with a `z-index` of 1000. Any accessibility overlays or focusable elements that must appear visually above the content, such as skip-to-content links, must use a `z-index` of 1001 or higher. Otherwise, when focused, they may be hidden behind the sticky header, failing their accessibility purpose.
 **Action:** Always verify the computed `z-index` when adding or modifying skip links, tooltips, or any accessibility elements intended to overlay the main content, ensuring they explicitly declare `z-index: 1001` (or appropriate) to sit above the sticky header context.
+
+## 2025-01-28 - Focus Management with Smooth Scrolling Anchor Links
+**Learning:** When using JavaScript to implement custom smooth scrolling for anchor links (e.g., skip-to-content links or navigation menus), the browser's native focus management is bypassed. If you only use `window.scrollTo()`, the visual viewport changes, but the keyboard focus remains on the clicked link. This breaks keyboard navigation, as the next `Tab` press will jump the user back to the top of the page rather than continuing from the target section.
+**Action:** Always explicitly manage focus when overriding native anchor link behavior. Use `targetElement.setAttribute('tabindex', '-1')` (to make non-interactive elements programmatically focusable) and `targetElement.focus({ preventScroll: true })` to move focus to the destination without disrupting the smooth scroll animation.
