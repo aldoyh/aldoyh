@@ -1,3 +1,7 @@
 ## 2025-01-24 - Accessibility Overlays and Sticky Header Constraints
 **Learning:** The application features a fixed sticky header with a `z-index` of 1000. Any accessibility overlays or focusable elements that must appear visually above the content, such as skip-to-content links, must use a `z-index` of 1001 or higher. Otherwise, when focused, they may be hidden behind the sticky header, failing their accessibility purpose.
 **Action:** Always verify the computed `z-index` when adding or modifying skip links, tooltips, or any accessibility elements intended to overlay the main content, ensuring they explicitly declare `z-index: 1001` (or appropriate) to sit above the sticky header context.
+
+## 2025-01-24 - Smooth Scrolling Accessibility Bug
+**Learning:** Using `e.preventDefault()` on smooth scroll links (e.g. `document.querySelectorAll('a[href^="#"]')`) interrupts the browser's native focus management mechanism. Keyboard and screen reader users clicking a link (like "Skip to content") will visually scroll, but focus won't logically move to the target element (`#main-content`), causing their next tab sequence to start over or proceed incorrectly.
+**Action:** Always manually restore focus to the target element using `targetElement.focus({ preventScroll: true })` after programmatically scrolling, ensuring users immediately engage with the content they navigated to. Additionally, update the URL hash via `history.pushState(null, null, targetId)` if necessary, so users can bookmark the anchor correctly.
