@@ -648,25 +648,59 @@
             const mobileMenuBtn = document.getElementById('mobile-menu-btn');
             const navLinks = document.getElementById('nav-links');
 
+            function isMobileView() {
+                return getComputedStyle(mobileMenuBtn).display !== 'none';
+            }
+
+            function closeMobileMenu(returnFocus) {
+                navLinks.classList.remove('active');
+                mobileMenuBtn.setAttribute('aria-expanded', 'false');
+                mobileMenuBtn.querySelector('i').className = 'fas fa-bars';
+                navLinks.inert = true;
+                if (returnFocus) {
+                    mobileMenuBtn.focus();
+                }
+            }
+
+            // On load, make the collapsed menu inert so its links are not tabbable
+            if (isMobileView()) {
+                navLinks.inert = true;
+            }
+
             mobileMenuBtn.addEventListener('click', function() {
-                navLinks.classList.toggle('active');
+                const isExpanded = navLinks.classList.toggle('active');
 
                 // Update aria-expanded attribute
-                const isExpanded = navLinks.classList.contains('active');
                 mobileMenuBtn.setAttribute('aria-expanded', isExpanded);
 
                 // Change icon based on state
-                const icon = mobileMenuBtn.querySelector('i');
-                icon.className = isExpanded ? 'fas fa-times' : 'fas fa-bars';
+                mobileMenuBtn.querySelector('i').className = isExpanded ? 'fas fa-times' : 'fas fa-bars';
+
+                // Allow/prevent keyboard access to menu links
+                navLinks.inert = !isExpanded;
+                if (!isExpanded) {
+                    mobileMenuBtn.focus();
+                }
             });
 
-            // Close mobile menu when clicking on a link
+            // Close mobile menu when clicking on a link, returning focus to toggle
             document.querySelectorAll('.nav-links a').forEach(link => {
                 link.addEventListener('click', () => {
-                    navLinks.classList.remove('active');
-                    mobileMenuBtn.setAttribute('aria-expanded', 'false');
-                    mobileMenuBtn.querySelector('i').className = 'fas fa-bars';
+                    closeMobileMenu(true);
                 });
+            });
+
+            // On resize, sync inert state with visibility (debounced)
+            let resizeTimer;
+            window.addEventListener('resize', function() {
+                clearTimeout(resizeTimer);
+                resizeTimer = setTimeout(function() {
+                    if (!isMobileView()) {
+                        navLinks.inert = false;
+                    } else if (!navLinks.classList.contains('active')) {
+                        navLinks.inert = true;
+                    }
+                }, 150);
             });
 
             // Header scroll effect
