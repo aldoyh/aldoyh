@@ -60,6 +60,11 @@
             top: 6px;
         }
 
+        .skip-link:focus-visible {
+            outline: 2px solid var(--text-color);
+            outline-offset: 4px;
+        }
+
         #main-content:focus {
             outline: none;
         }
@@ -98,6 +103,12 @@
             display: flex;
             align-items: center;
             gap: 10px;
+            border-radius: 4px;
+        }
+
+        .logo:focus-visible {
+            outline: 2px solid var(--primary-color);
+            outline-offset: 4px;
         }
 
         .logo i {
@@ -120,8 +131,14 @@
         }
 
         .nav-links a:hover,
-        .nav-links a:focus {
+        .nav-links a:focus-visible {
             color: var(--primary-color);
+        }
+
+        .nav-links a:focus-visible {
+            outline: 2px solid var(--primary-color);
+            outline-offset: 4px;
+            border-radius: 4px;
         }
 
         .nav-links a::after {
@@ -136,7 +153,7 @@
         }
 
         .nav-links a:hover::after,
-        .nav-links a:focus::after {
+        .nav-links a:focus-visible::after {
             width: 100%;
         }
 
@@ -154,11 +171,6 @@
         .mobile-menu-btn:focus-visible {
             outline: 2px solid var(--primary-color);
             outline-offset: 4px;
-        }
-
-        .mobile-menu-btn:focus-visible {
-            outline: 2px solid var(--primary-color);
-            outline-offset: 2px;
             border-radius: 4px;
         }
 
@@ -231,11 +243,14 @@
         }
 
         .btn:hover,
-        .btn:focus {
+        .btn:focus-visible {
             transform: translateY(-5px);
             box-shadow: 0 20px 30px rgba(0, 0, 0, 0.4);
+        }
+
+        .btn:focus-visible {
             outline: 2px solid var(--primary-color);
-            outline-offset: 2px;
+            outline-offset: 4px;
         }
 
         .btn::before {
@@ -408,11 +423,14 @@
         }
 
         .social-icons a:hover,
-        .social-icons a:focus {
+        .social-icons a:focus-visible {
             transform: translateY(-5px) scale(1.1);
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .social-icons a:focus-visible {
             outline: 2px solid var(--primary-color);
-            outline-offset: 2px;
+            outline-offset: 4px;
         }
 
         .copyright {
@@ -548,7 +566,7 @@
                 ELEMENTS
             </a>
 
-            <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle navigation menu" title="Toggle navigation menu" aria-expanded="false">
+            <button class="mobile-menu-btn" id="mobile-menu-btn" aria-controls="nav-links" aria-label="Toggle navigation menu" title="Toggle navigation menu" aria-expanded="false">
                 <i class="fas fa-bars" aria-hidden="true"></i>
             </button>
 
