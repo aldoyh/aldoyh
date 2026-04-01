@@ -731,7 +731,23 @@
             document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                 anchor.addEventListener('click', function(e) {
                     const targetId = this.getAttribute('href');
-                    if (targetId === '#') return;
+                    if (targetId === '#') {
+                        e.preventDefault();
+
+                        // Add micro-UX visual feedback to placeholder buttons
+                        if (this.classList.contains('btn') && !this.classList.contains('disabled')) {
+                            const originalContent = this.innerHTML;
+                            this.innerHTML = '<i class="fas fa-spinner fa-spin" aria-hidden="true"></i> Processing...';
+                            this.classList.add('disabled');
+
+                            setTimeout(() => {
+                                this.innerHTML = originalContent;
+                                this.classList.remove('disabled');
+                            }, 1000);
+                        }
+
+                        return;
+                    }
 
                     e.preventDefault();
 
@@ -847,6 +863,22 @@
                     top: 0,
                     behavior: 'smooth'
                 });
+
+                // Set focus back to logo for accessibility
+                const topLogo = document.querySelector('.logo');
+                if (topLogo) {
+                    // Update URL hash without jumping
+                    if (history.pushState) {
+                        history.pushState(null, null, '#home');
+                    } else {
+                        window.location.hash = '#home';
+                    }
+
+                    // Small timeout to allow smooth scroll to start
+                    setTimeout(() => {
+                        topLogo.focus({ preventScroll: true });
+                    }, 50);
+                }
             });
         });
     </script>
