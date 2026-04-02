@@ -64,7 +64,8 @@
             outline-offset: 4px;
         }
 
-        #main-content:focus {
+        #main-content:focus,
+        section:focus {
             outline: none;
         }
 
@@ -556,7 +557,7 @@
         }
     </style>
 </head>
-<body>
+<body id="home">
     <a href="#main-content" class="skip-link">Skip to content</a>
 
     <header id="main-header">
@@ -760,6 +761,7 @@
                         });
 
                         // Set focus to the target element for accessibility
+                        targetElement.setAttribute('tabindex', '-1');
                         targetElement.focus({ preventScroll: true });
 
                         // Update URL hash without jumping
