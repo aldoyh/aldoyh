@@ -29,6 +29,10 @@
             box-sizing: border-box;
         }
 
+        section:focus {
+            outline: none;
+        }
+
         html {
             scroll-behavior: smooth;
         }
@@ -582,7 +586,7 @@
 
     <main id="main-content" tabindex="-1">
         <!-- Water Section -->
-        <section id="water" class="water-section" aria-labelledby="water-heading">
+        <section id="water" class="water-section" aria-labelledby="water-heading" tabindex="-1">
             <div class="element-bg"></div>
             <div class="parallax-element water-mountains" data-speed="0.3"></div>
             <div class="section-content">
@@ -593,7 +597,7 @@
         </section>
 
         <!-- Earth Section -->
-        <section id="earth" class="earth-section" aria-labelledby="earth-heading">
+        <section id="earth" class="earth-section" aria-labelledby="earth-heading" tabindex="-1">
             <div class="element-bg"></div>
             <div class="parallax-element earth-trees" data-speed="0.4"></div>
             <div class="section-content">
@@ -604,7 +608,7 @@
         </section>
 
         <!-- Wind Section -->
-        <section id="wind" class="wind-section" aria-labelledby="wind-heading">
+        <section id="wind" class="wind-section" aria-labelledby="wind-heading" tabindex="-1">
             <div class="element-bg"></div>
             <div class="parallax-element wind-clouds" data-speed="0.2"></div>
             <div class="section-content">
@@ -615,7 +619,7 @@
         </section>
 
         <!-- Magic Section -->
-        <section id="magic" class="magic-section" aria-labelledby="magic-heading">
+        <section id="magic" class="magic-section" aria-labelledby="magic-heading" tabindex="-1">
             <div class="element-bg"></div>
             <div class="parallax-element magic-spells" data-speed="0.5"></div>
             <div class="section-content">
