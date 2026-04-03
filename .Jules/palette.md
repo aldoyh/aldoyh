@@ -9,3 +9,7 @@
 ## 2025-01-24 - Programmatic Focus on Sections
 **Learning:** When using JavaScript to manually move focus to a specific element after smooth scrolling (e.g., `targetElement.focus()`), the target element must be focusable. Non-interactive elements like `<section>` or `<div>` are not focusable by default. If you try to focus them, the `.focus()` call will silently fail, and keyboard users' focus will remain where it was.
 **Action:** When creating in-page navigation links that scroll to sections of the page, ensure the target elements have `tabindex="-1"`. This allows them to receive programmatic focus via JavaScript without inserting them into the normal keyboard tab order. Additionally, add a CSS rule like `section:focus { outline: none; }` to hide the default focus ring that might appear when the section receives programmatic focus, ensuring visual polish.
+
+## 2025-01-24 - Global Keyboard Event Guarding
+**Learning:** Adding global keyboard listeners (like `Escape` or custom shortcuts like `T`) directly to `document` can unexpectedly override user inputs if they press those keys while actively typing in a form or input field.
+**Action:** Always wrap global keyboard event actions in a guard clause checking `if (['INPUT', 'TEXTAREA'].includes(e.target.tagName))` to ensure that custom navigation or global shortcuts do not interfere with normal typing and data entry.
