@@ -12,5 +12,3 @@ Disallow: /.git/
 Disallow: /.github/
 Disallow: /node_modules/
 Disallow: /_site/
-Disallow: /README_v2.md
-Disallow: /report.html

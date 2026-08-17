@@ -49,8 +49,6 @@ sass:
 
 # Exclude files from build
 exclude:
-  - README_v2.md
-  - report.html
   - techstack.yml
   - "*.log"
   - Gemfile
