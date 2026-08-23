@@ -5,7 +5,7 @@
 </div>
 
 <h1 align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=35&pause=1000&color=B1002F&center=true&vCenter=true&multiline=true&width=600&height=100&lines=Hi%2C+I'm+Hasan+AlDoy+%F0%9F%91%8B;%D9%82%D9%88%D9%87..+%D8%A5%D8%B3%D9%85%D9%8A+%D8%AD%D8%B3%D9%86+%D8%A7%D9%84%D8%AF%D9%88%D9%8A" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=35&pause=1000&color=B1002F&center=true&vCenter=true&multiline=true&width=600&height=100&lines=Hi%2C+I'm+Hasan+AlDoy+%F0%9F%91%8B;%D9%82%D9%88%D9%87..+%D8%A5%D8%B3%D9%85%D9%8A+%D8%AD%D8%B3%D9%86+%D8%A7%D9%84%D8%AF%D9%88%D9%8A" alt="Typing SVG" />
 </h1>
 
 <p align="center">
@@ -27,8 +27,8 @@
 <hr /> 
 
 <div align="center">
-  
-![https://camo.githubusercontent.com/62da68eb62b1e5f175f7d1f0191dd89a653d7908feb22d37d4a0ab07365d6791/68747470733a2f2f6d656469612e67697068792e636f6d2f6d656469612f4d3967624264396e6244724f5475314d71782f67697068792e676966](https://raw.githubusercontent.com/aldoyh/aldoyh/refs/heads/main/svgs/hugo-intro.svg)
+
+![Wave Animation](https://raw.githubusercontent.com/aldoyh/aldoyh/refs/heads/main/svgs/hugo-intro.svg)
 
 </div>
 
@@ -62,6 +62,56 @@
 
 ---
 
+## 🏗️ Featured Projects
+
+<div align="center">
+
+| Project | Description | Year | Status |
+|---------|-------------|------|--------|
+| [**AlSarya TV Show**](https://alsarya.tv) | Interactive broadcast platform | 2019 - 2025 | 🟢 Active |
+| [**VG55**](https://www.youtube.com/channel/UCzXURHgFJuC0QpuFYOHRHeg) | Virtual gaming and streaming channel | 2020 | 🟢 Active |
+| [**Bahrain TV**](https://live.bh) | National television broadcasting | 2001 - 2023 | ✅ Complete |
+| [**doy.tech Portfolio**](https://doy.tech) | Personal portfolio and services | 2021 | 🟢 Active |
+
+</div>
+
+<div align="center">
+  <img src="images/DreamShaper_v7_by_Hasan_Aldoy_Mastermind.jpg" width="300" alt="AlSarya TV Show" style="border-radius: 10px;"/>
+</div>
+
+---
+
+## 📊 GitHub Analytics Dashboard
+
+<div align="center">
+  <img height="200em" src="https://raw.githubusercontent.com/aldoyh/gh-stats/main/generated/overview.svg" alt="GitHub Overview Stats"/>
+  <img height="200em" src="https://raw.githubusercontent.com/aldoyh/gh-stats/main/generated/languages.svg" alt="Most Used Languages"/>
+</div>
+
+<p align="center"><sub>Generated daily by <a href="https://github.com/aldoyh/gh-stats">aldoyh/gh-stats</a></sub></p>
+
+### 🏆 **GitHub Achievements**
+<div align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=aldoyh&theme=tokyonight&no-frame=false&no-bg=false&margin-w=4&row=2&column=3"/>
+</div>
+
+### 📈 **Contribution Activity**
+<div align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=aldoyh&theme=tokyo-night&bg_color=1a1b27&color=70a5fd&line=bf91f3&point=38bdae&area=true&hide_border=true" width="100%"/>
+</div>
+
+### 🔝 **Top Contributed Repositories**
+<div align="center">
+  <img src="https://github-contributor-stats.vercel.app/api?username=aldoyh&limit=5&theme=tokyonight&combine_all_yearly_contributions=true&hide_border=true" alt="Top Contributed Repositories"/>
+</div>
+
+### ✍️ **Random Dev Quote**
+<div align="center">
+  <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight" alt="Random Dev Quote"/>
+</div>
+
+---
+
 ## 🛠️ Technology Arsenal
 
 ### 💻 **Core Languages**
@@ -92,54 +142,6 @@
 
 ---
 
-## 📊 GitHub Analytics Dashboard
-
-<div align="center">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=aldoyh&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true"/>
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=aldoyh&layout=compact&langs_count=8&theme=tokyonight&hide_border=true"/>
-</div>
-
-### 🏆 **GitHub Achievements**
-<div align="center">
-  <img src="https://github-profile-trophy-tawny.vercel.app/?username=aldoyh&theme=tokyonight&no-frame=false&no-bg=false&margin-w=4&row=2&column=3"/>
-</div>
-
-### 📈 **Contribution Activity**
-<div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=aldoyh&theme=tokyo-night&bg_color=1a1b27&color=70a5fd&line=bf91f3&point=38bdae&area=true&hide_border=true" width="100%"/>
-</div>
-
-### 🔥 **Streak Statistics**
-<div align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=aldoyh&theme=tokyonight&hide_border=true"/>
-</div>
-
-### ✍️ **Random Dev Quote**
-<div align="center">
-  <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight" alt="Random Dev Quote"/>
-</div>
-
----
-
-## 🏗️ Featured Projects
-
-<div align="center">
-
-| Project | Description | Year | Status |
-|---------|-------------|------|--------|
-| [**AlSarya TV Show**](https://alsarya.tv) | Interactive broadcast platform | 2019 - 2025 | 🟢 Active |
-| [**VG55**](https://www.youtube.com/channel/UCzXURHgFJuC0QpuFYOHRHeg) | Virtual gaming and streaming channel | 2020 | 🟢 Active |
-| [**Bahrain TV**](https://live.bh) | National television broadcasting | 2001 - 2023 | ✅ Complete |
-| [**doy.tech Portfolio**](https://doy.tech) | Personal portfolio and services | 2021 | 🟢 Active |
-
-</div>
-
-<div align="center">
-  <img src="images/DreamShaper_v7_by_Hasan_Aldoy_Mastermind.jpg" width="300" alt="AlSarya TV Show" style="border-radius: 10px;"/>
-</div>
-
----
-
 ## 🌐 Connect & Collaborate
 
 <div align="center">
@@ -158,49 +160,21 @@
 
 ---
 
-## 📈 Productivity Stats
-
-<!-- TODO-IST:START -->
-🏆 **9,742** Karma Points  
-🌸 Completed **0** tasks today  
-✅ Completed **758** tasks so far  
-⏳ Longest streak is **5** days  
-📅 Last updated: **Thursday, August 31, 2023**
-<!-- TODO-IST:END -->
-
-<div align="center">
-  <img src="https://stats.dooboo.io/api/github-trophies?login=aldoyh" alt="GitHub Trophies"/>
-  <br>
-  <img src="https://stats.dooboo.io/api/github-stats-advanced?login=aldoyh" alt="Advanced GitHub Stats"/>
-</div>
-
----
-
-## 🔝 Top Contributed Repositories
-
-<div align="center">
-  <img src="https://github-contributor-stats.vercel.app/api?username=aldoyh&limit=5&theme=tokyonight&combine_all_yearly_contributions=true&hide_border=true" alt="Top Contributed Repositories"/>
-</div>
-
----
+## 📜 Credits & Inspiration
 
 <div align="center">
   <img src="https://komarev.com/ghpvc/?username=aldoyh&label=Profile%20Views&color=B1002F&style=for-the-badge" alt="Profile Views"/>
   <br><br>
-  
+
   ### 🚀 *"Code is poetry, and every commit tells a story"*
-  
+
   <sub>⭐ Feel free to star any repositories you find interesting!</sub>
-  
+
 </div>
-
----
-
-## 📜 Credits & Inspiration
 
 <div align="center">
 
-<p><strong>Hand-crafted by Bahrain's 🇧🇭 Finest Web Artisans</strong> ⦿ <strong>inspired by @doytech</strong> | <strong>version 3.2025.01.23</strong></p>
+<p><strong>Hand-crafted by Bahrain's 🇧🇭 Finest Web Artisans</strong> ⦿ <strong>inspired by @doytech</strong> | <strong>version 3.2026.08.17</strong></p>
 
 <blockquote>
 <p><em>صفحة شخصية لأعمالي الشخصية والإحترافية في كل من القطاع العام والخاص، المهم ليس فيما ستأخذ بل من أين أخذته؟</em> <strong>حفاظك على المُلكية الفكرية لغيرك هي كافية لحماية حقوقك.</strong></p>
