@@ -24,7 +24,7 @@
   Creating Live TV Interactive Games & Dynamic Info Systems Since 2001
 </h4>
 
-<hr /> 
+<hr />
 
 <div align="center">
 
@@ -53,6 +53,7 @@
 > built an airplane while jumping of a cliff, when reached the ground it was a VAN! (AI Generated Plan)
 
 ### 💼 **Professional Journey**
+
 - 🤖 **Full Stack AI Prompter Engineer** (2023): ChatGPT | DALL-E | Stability.ai | Replicate | Certified OpenAI Engineer
 - 🔭 **Senior Broadcast Engineer** at [Bahrain TV](https://live.bh) since 2001
 - 🎬 **Virtual Director** of [VG55](https://www.youtube.com/channel/UCzXURHgFJuC0QpuFYOHRHeg)
@@ -66,12 +67,12 @@
 
 <div align="center">
 
-| Project | Description | Year | Status |
-|---------|-------------|------|--------|
-| [**AlSarya TV Show**](https://alsarya.tv) | Interactive broadcast platform | 2019 - 2025 | 🟢 Active |
-| [**VG55**](https://www.youtube.com/channel/UCzXURHgFJuC0QpuFYOHRHeg) | Virtual gaming and streaming channel | 2020 | 🟢 Active |
-| [**Bahrain TV**](https://live.bh) | National television broadcasting | 2001 - 2023 | ✅ Complete |
-| [**doy.tech Portfolio**](https://doy.tech) | Personal portfolio and services | 2021 | 🟢 Active |
+| Project                                                              | Description                          | Year        | Status      |
+| -------------------------------------------------------------------- | ------------------------------------ | ----------- | ----------- |
+| [**AlSarya TV Show**](https://alsarya.tv)                            | Interactive broadcast platform       | 2019 - 2025 | 🟢 Active   |
+| [**VG55**](https://www.youtube.com/channel/UCzXURHgFJuC0QpuFYOHRHeg) | Virtual gaming and streaming channel | 2020        | 🟢 Active   |
+| [**Bahrain TV**](https://live.bh)                                    | National television broadcasting     | 2001 - 2023 | ✅ Complete |
+| [**doy.tech Portfolio**](https://doy.tech)                           | Personal portfolio and services      | 2021        | 🟢 Active   |
 
 </div>
 
@@ -91,21 +92,25 @@
 <p align="center"><sub>Generated daily by <a href="https://github.com/aldoyh/gh-stats">aldoyh/gh-stats</a></sub></p>
 
 ### 🏆 **GitHub Achievements**
+
 <div align="center">
   <img src="https://github-profile-trophy.vercel.app/?username=aldoyh&theme=tokyonight&no-frame=false&no-bg=false&margin-w=4&row=2&column=3"/>
 </div>
 
 ### 📈 **Contribution Activity**
+
 <div align="center">
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=aldoyh&theme=tokyo-night&bg_color=1a1b27&color=70a5fd&line=bf91f3&point=38bdae&area=true&hide_border=true" width="100%"/>
 </div>
 
 ### 🔝 **Top Contributed Repositories**
+
 <div align="center">
   <img src="https://github-contributor-stats.vercel.app/api?username=aldoyh&limit=5&theme=tokyonight&combine_all_yearly_contributions=true&hide_border=true" alt="Top Contributed Repositories"/>
 </div>
 
 ### ✍️ **Random Dev Quote**
+
 <div align="center">
   <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight" alt="Random Dev Quote"/>
 </div>
@@ -115,6 +120,7 @@
 ## 🛠️ Technology Arsenal
 
 ### 💻 **Core Languages**
+
 <div align="center">
 
 ![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
@@ -127,6 +133,7 @@
 </div>
 
 ### 🚀 **Frameworks & Tools**
+
 <div align="center">
 
 [![AirSDK](https://img.shields.io/badge/AirSDK-Harman-FF0000?style=for-the-badge&logo=adobe)](https://airsdk.dev)
@@ -166,9 +173,9 @@
   <img src="https://komarev.com/ghpvc/?username=aldoyh&label=Profile%20Views&color=B1002F&style=for-the-badge" alt="Profile Views"/>
   <br><br>
 
-  ### 🚀 *"Code is poetry, and every commit tells a story"*
+### 🚀 _"Code is poetry, and every commit tells a story"_
 
-  <sub>⭐ Feel free to star any repositories you find interesting!</sub>
+<sub>⭐ Feel free to star any repositories you find interesting!</sub>
 
 </div>
 
