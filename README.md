@@ -1,46 +1,39 @@
 <!-- Distinctly Unique & Beautiful Profile by Hasan AlDoy -->
 
 <div align="center">
-  <img src="logos-n-beyond/doy-tech-powered.png" width="80" alt="doy.tech Logo 2025"/>
+  <img src="logos-n-beyond/doy-tech-powered.png" width="80" alt="doy.tech logo"/>
 </div>
 
 <h1 align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=35&pause=1000&color=B1002F&center=true&vCenter=true&multiline=true&width=600&height=100&lines=Hi%2C+I'm+Hasan+AlDoy+%F0%9F%91%8B;%D9%82%D9%88%D9%87..+%D8%A5%D8%B3%D9%85%D9%8A+%D8%AD%D8%B3%D9%86+%D8%A7%D9%84%D8%AF%D9%88%D9%8A" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=35&pause=1000&color=B1002F&center=true&vCenter=true&multiline=true&width=600&height=100&lines=Hi%2C+I'm+Hasan+AlDoy+%F0%9F%91%8B;%D9%82%D9%88%D9%87..+%D8%A5%D8%B3%D9%85%D9%8A+%D8%AD%D8%B3%D9%86+%D8%A7%D9%84%D8%AF%D9%88%D9%8A" alt="Hi, I'm Hasan AlDoy" />
 </h1>
 
 <p align="center">
   <img src="https://img.shields.io/badge/From-Bahrain%20🇧🇭-B1002F?style=for-the-badge&labelColor=0D0D0D" alt="From Bahrain"/>
 </p>
 
-<h2 align="center">
-  <em>Code is <span style="color:#B1002F;">Poetry</span> • Coding is <span style="color:#B1002F;">Art</span></em>
-</h2>
-
-<h3 align="center" style="margin-bottom: 10px">
-  Online Since 1996 • Streaming Since 2005 • 1st Place Winner of Bahrain Startup Weekend 2012
+<h3 align="center">
+  <em>Code is Poetry • Coding is Art</em>
 </h3>
 
-<h4 align="center" style="margin-bottom: 10px">
-  Creating Live TV Interactive Games & Dynamic Info Systems Since 2001
-</h4>
-
-<hr /> 
+<p align="center">
+  <strong>Online Since 1996 • Streaming Since 2005 • 1st Place Winner of Bahrain Startup Weekend 2012</strong><br>
+  Creating Live TV Interactive Games &amp; Dynamic Info Systems Since 2001
+</p>
 
 <div align="center">
-
-![Wave Animation](https://raw.githubusercontent.com/aldoyh/aldoyh/refs/heads/main/svgs/hugo-intro.svg)
-
+  <img src="https://raw.githubusercontent.com/aldoyh/aldoyh/refs/heads/main/svgs/hugo-intro.svg" alt="Animated banner" />
 </div>
 
-<br>
-
-<div align="center">
-  <a href="https://committers.top/bahrain_private" target="_blank">
-    <img src="https://user-badge.committers.top/bahrain_private/aldoyh.svg" alt="Committers Top Bahrain Private" width="280" />
+<p align="center">
+  <a href="https://committers.top/bahrain_private">
+    <img src="https://user-badge.committers.top/bahrain_private/aldoyh.svg" alt="Top committers in Bahrain (private)" width="280"/>
   </a>
   <br>
-  <img src="https://user-badge.committers.top/bahrain/aldoyh.svg" alt="Committers Top Bahrain" width="280"/>
-</div>
+  <a href="https://committers.top/bahrain">
+    <img src="https://user-badge.committers.top/bahrain/aldoyh.svg" alt="Top committers in Bahrain" width="280"/>
+  </a>
+</p>
 
 ---
 
@@ -64,19 +57,15 @@
 
 ## 🏗️ Featured Projects
 
-<div align="center">
-
-| Project | Description | Year | Status |
-|---------|-------------|------|--------|
-| [**AlSarya TV Show**](https://alsarya.tv) | Interactive broadcast platform | 2019 - 2025 | 🟢 Active |
+| Project | Description | Since | Status |
+|---------|-------------|-------|--------|
+| [**AlSarya TV Show**](https://alsarya.tv) | Interactive broadcast platform | 2019 | 🟢 Active |
 | [**VG55**](https://www.youtube.com/channel/UCzXURHgFJuC0QpuFYOHRHeg) | Virtual gaming and streaming channel | 2020 | 🟢 Active |
-| [**Bahrain TV**](https://live.bh) | National television broadcasting | 2001 - 2023 | ✅ Complete |
 | [**doy.tech Portfolio**](https://doy.tech) | Personal portfolio and services | 2021 | 🟢 Active |
-
-</div>
+| [**Bahrain TV**](https://live.bh) | National television broadcasting | 2001 | 🟢 Active |
 
 <div align="center">
-  <img src="images/DreamShaper_v7_by_Hasan_Aldoy_Mastermind.jpg" width="300" alt="AlSarya TV Show" style="border-radius: 10px;"/>
+  <img src="images/DreamShaper_v7_by_Hasan_Aldoy_Mastermind.jpg" width="300" alt="AlSarya TV Show artwork"/>
 </div>
 
 ---
@@ -84,30 +73,30 @@
 ## 📊 GitHub Analytics Dashboard
 
 <div align="center">
-  <img height="200em" src="https://raw.githubusercontent.com/aldoyh/gh-stats/main/generated/overview.svg" alt="GitHub Overview Stats"/>
-  <img height="200em" src="https://raw.githubusercontent.com/aldoyh/gh-stats/main/generated/languages.svg" alt="Most Used Languages"/>
+  <img height="210" src="https://raw.githubusercontent.com/aldoyh/gh-stats/main/generated/overview.svg" alt="GitHub overview: stars, forks, contributions, lines of code changed"/>
+  <img height="210" src="https://raw.githubusercontent.com/aldoyh/gh-stats/main/generated/languages.svg" alt="Most used programming languages"/>
 </div>
 
-<p align="center"><sub>Generated daily by <a href="https://github.com/aldoyh/gh-stats">aldoyh/gh-stats</a></sub></p>
+<p align="center">
+  <sub>Self-hosted &amp; regenerated daily by <a href="https://github.com/aldoyh/gh-stats">aldoyh/gh-stats</a> — no third-party rate limits.</sub>
+</p>
 
 ### 🏆 **GitHub Achievements**
+
 <div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=aldoyh&theme=tokyonight&no-frame=false&no-bg=false&margin-w=4&row=2&column=3"/>
+  <img src="https://github-trophies.vercel.app/?username=aldoyh&theme=tokyonight&no-frame=false&no-bg=false&margin-w=4&row=2&column=3" alt="GitHub achievement trophies"/>
 </div>
 
 ### 📈 **Contribution Activity**
-<div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=aldoyh&theme=tokyo-night&bg_color=1a1b27&color=70a5fd&line=bf91f3&point=38bdae&area=true&hide_border=true" width="100%"/>
-</div>
 
-### 🔝 **Top Contributed Repositories**
 <div align="center">
-  <img src="https://github-contributor-stats.vercel.app/api?username=aldoyh&limit=5&theme=tokyonight&combine_all_yearly_contributions=true&hide_border=true" alt="Top Contributed Repositories"/>
+  <img src="https://ghchart.rshah.org/B1002F/aldoyh" width="100%" alt="Hasan AlDoy's GitHub contribution chart"/>
 </div>
 
 ### ✍️ **Random Dev Quote**
+
 <div align="center">
-  <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight" alt="Random Dev Quote"/>
+  <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight" alt="Random developer quote"/>
 </div>
 
 ---
@@ -115,27 +104,29 @@
 ## 🛠️ Technology Arsenal
 
 ### 💻 **Core Languages**
+
 <div align="center">
 
 ![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![ActionScript3](https://img.shields.io/badge/ActionScript3-FF0000?style=for-the-badge&logo=adobe&logoColor=white)
-![Dart](https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white)
-![Lua](https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=lua&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![Dart](https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white)
+![Lua](https://img.shields.io/badge/Lua-2C2D72?style=for-the-badge&logo=lua&logoColor=white)
+![ActionScript3](https://img.shields.io/badge/ActionScript3-FF0000?style=for-the-badge&logo=adobe&logoColor=white)
 
 </div>
 
 ### 🚀 **Frameworks & Tools**
+
 <div align="center">
 
-[![AirSDK](https://img.shields.io/badge/AirSDK-Harman-FF0000?style=for-the-badge&logo=adobe)](https://airsdk.dev)
 [![Laravel](https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white)](https://laravel.com)
+[![AirSDK](https://img.shields.io/badge/AirSDK-Harman-FF0000?style=for-the-badge&logo=adobe&logoColor=white)](https://airsdk.dev)
 
 </div>
 
 <div align="center">
-  <img src="images/LARAVEL.png" alt="Laravel Framework" width="200"/>
+  <img src="images/LARAVEL.png" alt="Laravel framework" width="200"/>
 </div>
 
 > **Note:** Even if there are other respectable frameworks, compared to the Grand Master of them all **Laravel**, they have no chance. Period.
@@ -146,15 +137,15 @@
 
 <div align="center">
 
-<a href="https://doy.tech"><img src="https://img.shields.io/badge/Portfolio-doy.tech-FF5722?style=for-the-badge&logo=google-chrome&logoColor=white" alt="Portfolio"></a>
-<a href="mailto:hellos@doy.tech"><img src="https://img.shields.io/badge/Email-hellos@doy.tech-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"></a>
-<a href="https://twitter.com/aldoyh"><img src="https://img.shields.io/badge/Twitter-aldoyh-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" alt="Twitter"></a>
-<a href="https://instagram.com/aldoyh"><img src="https://img.shields.io/badge/Instagram-aldoyh-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram"></a>
+<a href="https://doy.tech"><img src="https://img.shields.io/badge/Portfolio-doy.tech-FF5722?style=for-the-badge&logo=google-chrome&logoColor=white" alt="Portfolio: doy.tech"></a>
+<a href="mailto:hellos@doy.tech"><img src="https://img.shields.io/badge/Email-hellos@doy.tech-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email: hellos@doy.tech"></a>
+<a href="https://twitter.com/aldoyh"><img src="https://img.shields.io/badge/Twitter-aldoyh-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" alt="Twitter: @aldoyh"></a>
+<a href="https://instagram.com/aldoyh"><img src="https://img.shields.io/badge/Instagram-aldoyh-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram: @aldoyh"></a>
 
 <h3>📱 <strong>Social Stats</strong></h3>
 
 <a href="https://github.com/aldoyh"><img src="https://img.shields.io/github/followers/aldoyh?style=social&label=Follow%20@aldoyh" alt="GitHub followers"></a>
-<a href="https://twitter.com/aldoyh"><img src="https://img.shields.io/twitter/follow/aldoyh?style=social" alt="Twitter Follow"></a>
+<a href="https://twitter.com/aldoyh"><img src="https://img.shields.io/twitter/follow/aldoyh?style=social" alt="Twitter followers"></a>
 
 </div>
 
@@ -163,18 +154,14 @@
 ## 📜 Credits & Inspiration
 
 <div align="center">
-  <img src="https://komarev.com/ghpvc/?username=aldoyh&label=Profile%20Views&color=B1002F&style=for-the-badge" alt="Profile Views"/>
-  <br><br>
 
-  ### 🚀 *"Code is poetry, and every commit tells a story"*
+<img src="https://komarev.com/ghpvc/?username=aldoyh&label=Profile%20Views&color=B1002F&style=for-the-badge" alt="Profile views"/>
 
-  <sub>⭐ Feel free to star any repositories you find interesting!</sub>
+### 🚀 *"Code is poetry, and every commit tells a story"*
 
-</div>
+<sub>⭐ Feel free to star any repositories you find interesting!</sub>
 
-<div align="center">
-
-<p><strong>Hand-crafted by Bahrain's 🇧🇭 Finest Web Artisans</strong> ⦿ <strong>inspired by @doytech</strong> | <strong>version 3.2026.08.17</strong></p>
+<p><strong>Hand-crafted by Bahrain's 🇧🇭 Finest Web Artisans</strong> ⦿ <strong>inspired by @doytech</strong> | <strong>version 3.2026.08.25</strong></p>
 
 <blockquote>
 <p><em>صفحة شخصية لأعمالي الشخصية والإحترافية في كل من القطاع العام والخاص، المهم ليس فيما ستأخذ بل من أين أخذته؟</em> <strong>حفاظك على المُلكية الفكرية لغيرك هي كافية لحماية حقوقك.</strong></p>
@@ -184,7 +171,7 @@
 
 <p>This profile was inspired by several talented developers:<br>
 <a href="https://github.com/elangosundar/awesome-README-templates">awesome-README</a> • 
-<a href="https://github.com/abhisheknaiidu/todoist-readme">todoist-readme</a> • 
+<a href="https://github.com/jstrieb/github-stats">jstrieb/github-stats</a> • 
 <a href="https://github.com/benjaminsampica/benjaminsampica">benjaminsampica</a></p>
 
 </div>
