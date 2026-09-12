@@ -50,6 +50,7 @@ sass:
 # Exclude files from build
 exclude:
   - techstack.yml
+  - docs
   - "*.log"
   - Gemfile
   - Gemfile.lock
