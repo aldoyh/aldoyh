@@ -400,117 +400,38 @@
         transform: translateY(30px);
       }
 
-<<<<<<< HEAD
       to {
         opacity: 1;
         transform: translateY(0);
       }
     }
-=======
-        #container {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            font-size: 5rem;
-            color: #ffffff;
-            margin-left: auto;
-            margin-right: auto;
-            margin-top: 5em;
-            text-align: center;
-            font-family: 'Courier New', Courier, monospace;
-            z-index: 1;
-        }
->>>>>>> e8adc75d674230d07e7ec4b82d8987d79aa5ac66
 
-<<<<<<< HEAD
     @keyframes slideInDown {
       from {
         opacity: 0;
         transform: translateY(-30px);
       }
-=======
-        canvas {
-            display: block;
-        }
-    </style>
-</head>
->>>>>>> e8adc75d674230d07e7ec4b82d8987d79aa5ac66
 
-<<<<<<< HEAD
       to {
         opacity: 1;
         transform: translateY(0);
       }
     }
-=======
-<body>
-    <div id="container"
-        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; font-size:5rem; color: #ffffff; margin-left: auto; margin-right: auto; margin-top: 5em; text-align: center; font-family: 'Courier New', Courier, monospace; z-index: 1;">
-        <div id="matrixText" text-split letters-slide-up>
-            Hello Neo, welcome to the Matrix.
-        </div>
-        <div id="matrixText2" text-split words-rotate-in>
-            The Matrix has you...
-        </div>
-        <div id="matrixText3" text-split words-slide-from-right>
-            Follow the white rabbit.
-        </div>
-        <div id="matrixText4" text-split letters-fade-in-random>
-            Knock, knock, knock...
-        </div>
-    </div>
-    <canvas id="matrixCanvas"></canvas>
->>>>>>> e8adc75d674230d07e7ec4b82d8987d79aa5ac66
 
-<<<<<<< HEAD
     @keyframes float {
       0% {
         transform: translateY(0px);
       }
-=======
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/TextPlugin.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/timothydesign/script/split-type.js"></script>
-    <script>
-    window.addEventListener("DOMContentLoaded", (event) => {
-      // Split text into spans
-      let typeSplit = new SplitType("[text-split]", {
-        types: "words, chars",
-        tagName: "span"
-      });
->>>>>>> e8adc75d674230d07e7ec4b82d8987d79aa5ac66
 
-<<<<<<< HEAD
       50% {
         transform: translateY(-15px);
       }
-=======
-      // Helper to show only one sentence at a time
-      const sentences = [
-        document.getElementById('matrixText'),
-        document.getElementById('matrixText2'),
-        document.getElementById('matrixText3'),
-        document.getElementById('matrixText4')
-      ];
-      sentences.forEach(el => el.style.opacity = 0);
->>>>>>> e8adc75d674230d07e7ec4b82d8987d79aa5ac66
 
-<<<<<<< HEAD
       100% {
         transform: translateY(0px);
-=======
-      function showSentence(index) {
-        sentences.forEach((el, i) => {
-          el.style.opacity = i === index ? 1 : 0;
-        });
->>>>>>> e8adc75d674230d07e7ec4b82d8987d79aa5ac66
       }
     }
 
-<<<<<<< HEAD
     .floating {
       animation: float 6s ease-in-out infinite;
     }
@@ -598,693 +519,169 @@
     @media (max-width: 992px) {
       .section-content h1 {
         font-size: 3rem;
-=======
-      // Animate each word in the sentence
-      function animateWords(sentenceEl, onComplete) {
-        const words = sentenceEl.querySelectorAll('.word');
-        gsap.set(words, { opacity: 0 });
-        gsap.to(words, {
-          opacity: 1,
-          duration: 0.5,
-          stagger: 0.5,
-          onComplete: onComplete
-        });
->>>>>>> e8adc75d674230d07e7ec4b82d8987d79aa5ac66
       }
 
-<<<<<<< HEAD
       .section-content p {
         font-size: 1.1rem;
-=======
-      // Timeline to show each sentence, then animate its words
-      let current = 0;
-      function nextSentence() {
-        showSentence(current);
-        animateWords(sentences[current], () => {
-          setTimeout(() => {
-            gsap.to(sentences[current], { opacity: 0, duration: 0.5 });
-            current = (current + 1) % sentences.length;
-            setTimeout(nextSentence, 500);
-          }, 1200);
-        });
->>>>>>> e8adc75d674230d07e7ec4b82d8987d79aa5ac66
       }
-      nextSentence();
 
-<<<<<<< HEAD
+      /* nextSentence(); */
+
       .nav-links {
         gap: 1.5rem;
-=======
-      // Link timelines to scroll position
-      function createScrollTrigger(triggerElement, timeline) {
-        // Reset tl when scroll out of view past bottom of screen
-        ScrollTrigger.create({
-          trigger: triggerElement,
-          start: "top bottom",
-          onLeaveBack: () => {
-            timeline.progress(0);
-            timeline.pause();
-          }
-        });
-        // Play tl when scrolled into view (60% from top of screen)
-        ScrollTrigger.create({
-          trigger: triggerElement,
-          start: "top 60%",
-          onEnter: () => timeline.play()
-        });
->>>>>>> e8adc75d674230d07e7ec4b82d8987d79aa5ac66
-      }
-    }
-
-<<<<<<< HEAD
-    @media (max-width: 768px) {
-      .mobile-menu-btn {
-        display: block;
-      }
-=======
-      $("[words-slide-up]").each(function (index) {
-        let tl = gsap.timeline({ paused: true });
-        tl.from($(this).find(".word"), { opacity: 0, yPercent: 100, duration: 0.5, ease: "back.out(2)", stagger: { amount: 0.5 } });
-        createScrollTrigger($(this), tl);
-      });
->>>>>>> e8adc75d674230d07e7ec4b82d8987d79aa5ac66
-
-<<<<<<< HEAD
-      .nav-links {
-        position: fixed;
-        top: 80px;
-        right: -100%;
-        flex-direction: column;
-        background: var(--card-bg);
-        width: 70%;
-        height: calc(100vh - 80px);
-        padding: 2rem;
-        transition: right 0.3s ease;
-        box-shadow: var(--box-shadow);
-      }
-=======
-      $("[words-rotate-in]").each(function (index) {
-        let tl = gsap.timeline({ paused: true });
-        tl.set($(this).find(".word"), { transformPerspective: 1000 });
-        tl.from($(this).find(".word"), { rotationX: -90, duration: 0.6, ease: "power2.out", stagger: { amount: 0.6 } });
-        createScrollTrigger($(this), tl);
-      });
->>>>>>> e8adc75d674230d07e7ec4b82d8987d79aa5ac66
-
-<<<<<<< HEAD
-      .nav-links.active {
-        right: 0;
-      }
-=======
-      $("[words-slide-from-right]").each(function (index) {
-        let tl = gsap.timeline({ paused: true });
-        tl.from($(this).find(".word"), { opacity: 0, x: "1em", duration: 0.6, ease: "power2.out", stagger: { amount: 0.2 } });
-        createScrollTrigger($(this), tl);
-      });
->>>>>>> e8adc75d674230d07e7ec4b82d8987d79aa5ac66
-
-<<<<<<< HEAD
-      .nav-links a {
-        display: block;
-        padding: 1rem 0;
-        font-size: 1.2rem;
-      }
-=======
-      $("[letters-slide-up]").each(function (index) {
-        let tl = gsap.timeline({ paused: true });
-        tl.from($(this).find(".char"), { yPercent: 100, duration: 0.2, ease: "power1.out", stagger: { amount: 0.6 } });
-        createScrollTrigger($(this), tl);
-      });
->>>>>>> e8adc75d674230d07e7ec4b82d8987d79aa5ac66
-
-<<<<<<< HEAD
-      .section-content {
-        padding: 2rem 1.5rem;
-        margin: 0 1rem;
-      }
-=======
-      $("[letters-slide-down]").each(function (index) {
-        let tl = gsap.timeline({ paused: true });
-        tl.from($(this).find(".char"), { yPercent: -120, duration: 0.3, ease: "power1.out", stagger: { amount: 0.7 } });
-        createScrollTrigger($(this), tl);
-      });
->>>>>>> e8adc75d674230d07e7ec4b82d8987d79aa5ac66
-
-<<<<<<< HEAD
-      .section-content h1 {
-        font-size: 2.5rem;
-      }
-=======
-      $("[letters-fade-in]").each(function (index) {
-        let tl = gsap.timeline({ paused: true });
-        tl.from($(this).find(".char"), { opacity: 0, duration: 0.2, ease: "power1.out", stagger: { amount: 0.8 } });
-        createScrollTrigger($(this), tl);
-      });
->>>>>>> e8adc75d674230d07e7ec4b82d8987d79aa5ac66
-
-<<<<<<< HEAD
-      .section-content p {
-        font-size: 1rem;
-      }
-=======
-      $("[letters-fade-in-random]").each(function (index) {
-        let tl = gsap.timeline({ paused: true });
-        tl.from($(this).find(".char"), { opacity: 0, duration: 0.05, ease: "power1.out", stagger: { amount: 0.4, from: "random" } });
-        createScrollTrigger($(this), tl);
-      });
->>>>>>> e8adc75d674230d07e7ec4b82d8987d79aa5ac66
-
-<<<<<<< HEAD
-      .btn {
-        padding: 0.8rem 2rem;
-        font-size: 0.9rem;
-      }
-
-      .social-icons a {
-        width: 3rem;
-        height: 3rem;
-        font-size: 1rem;
-      }
-    }
-
-    @media (max-width: 480px) {
-      .section-content h1 {
-        font-size: 2rem;
-      }
-
-      .section-content p {
-        font-size: 0.9rem;
-      }
-
-      .logo {
-        font-size: 1.5rem;
-      }
-
-      .nav-links {
-        width: 85%;
       }
     }
   </style>
-</head>
-
-<body id="home">
-  <a href="#main-content" class="skip-link">Skip to content</a>
-
-  <header id="main-header">
-    <nav class="navbar" role="navigation" aria-label="Main navigation">
-      <a href="#home" class="logo" aria-label="Elements of Life Home">
-        <i class="fas fa-water"></i>
-        ELEMENTS
-      </a>
-
-      <button class="mobile-menu-btn" id="mobile-menu-btn" aria-controls="nav-links" aria-label="Toggle navigation menu"
-        title="Toggle navigation menu" aria-expanded="false">
-        <i class="fas fa-bars" aria-hidden="true"></i>
-      </button>
-
-      <div class="nav-links" id="nav-links">
-        <a href="#water" aria-label="Navigate to Water section">HOSTING</a>
-        <a href="#earth" aria-label="Navigate to Earth section">INTERACTIVE</a>
-        <a href="#wind" aria-label="Navigate to Wind section">CLOUD</a>
-        <a href="#magic" aria-label="Navigate to Magic section">DEVOPS</a>
-      </div>
-    </nav>
-  </header>
-
-  <main id="main-content">
-    <!-- Water Section -->
-    <section id="water" class="water-section" aria-labelledby="water-heading">
-      <div class="element-bg"></div>
-      <div class="parallax-element water-mountains" data-speed="0.3"></div>
-      <div class="section-content">
-        <h1 id="water-heading">HOSTING</h1>
-        <p>
-          Leading the way in hosting solutions, we provide reliable and scalable platforms for your digital needs. Our
-          expert team is here to support you every step of the way, ensuring your website performs at its best.
-        </p>
-        <a href="#" class="btn" aria-label="Dive into Water section">Dive In</a>
-      </div>
-    </section>
-
-    <!-- Earth Section -->
-    <section id="earth" class="earth-section" aria-labelledby="earth-heading">
-      <div class="element-bg"></div>
-      <div class="parallax-element earth-trees" data-speed="0.4"></div>
-      <div class="section-content">
-        <h1 id="earth-heading">INTERACTIVE</h1>
-        <p>
-          Immerse yourself in our interactive exhibits, where technology meets wonder. Explore our virtual reality
-          experiences, hands-on science demonstrations, and immersive art installations. Let your curiosity lead the way
-          as you discover new frontiers of knowledge and creativity.
-          <a href="#" class="btn" aria-label="Explore Earth section">Explore</a>
-      </div>
-    </section>
-
-    <!-- Wind Section -->
-    <section id="wind" class="wind-section" aria-labelledby="wind-heading">
-      <div class="element-bg"></div>
-      <div class="parallax-element wind-clouds" data-speed="0.2"></div>
-      <div class="section-content">
-        <h1 id="wind-heading">CLOUD</h1>
-        <p>
-          Harnessing the power of the wind, we offer cutting-edge cloud solutions designed to meet your business needs.
-          Our state-of-the-art infrastructure and expert team are here to support you every step of the way, ensuring
-          your applications perform at their best.
-          <a href="#" class="btn" aria-label="Soar with Wind section">Soar</a>
-      </div>
-    </section>
-
-    <!-- Magic Section -->
-    <section id="magic" class="magic-section" aria-labelledby="magic-heading">
-      <div class="element-bg"></div>
-      <div class="parallax-element magic-spells" data-speed="0.5"></div>
-      <div class="section-content">
-        <h1 id="magic-heading">DEVOPS</h1>
-        <p>
-          The mysterious force that binds all elements together. Magic is the spark of creativity, the power of
-          transformation, and the wonder that exists in every moment. It reminds us that life itself is the greatest
-          magic of all, connecting us to something greater than ourselves.
-          <a href="#" class="btn" aria-label="Discover Magic section">Discover</a>
-      </div>
-    </section>
-  </main>
-
-  <!-- Theme Toggle -->
-  <button class="theme-toggle" id="theme-toggle" aria-label="Switch to light mode (Press T)"
-    title="Switch to light mode (Press T)" aria-pressed="false">
-    <i class="fas fa-moon" aria-hidden="true"></i>
-  </button>
-
-  <!-- Footer -->
-  <footer>
-    <div class="social-icons">
-      <a href="#" aria-label="Follow us on Facebook"><i class="fab fa-facebook-f"></i></a>
-      <a href="#" aria-label="Follow us on Twitter"><i class="fab fa-twitter"></i></a>
-      <a href="#" aria-label="Follow us on Instagram"><i class="fab fa-instagram"></i></a>
-      <a href="#" aria-label="Connect with us on LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-    </div>
-    <p class="copyright">© 2026 Elements of the Digital Us. All rights reserved.</p>
-  </footer>
 
   <script>
-    // DOM Content Loaded
-    document.addEventListener("DOMContentLoaded", function () {
-      // Mobile menu toggle
-      const mobileMenuBtn = document.getElementById("mobile-menu-btn");
-      const navLinks = document.getElementById("nav-links");
 
-      function isMobileView() {
-        return getComputedStyle(mobileMenuBtn).display !== "none";
-      }
-
-      function closeMobileMenu(returnFocus) {
-        navLinks.classList.remove("active");
-        mobileMenuBtn.setAttribute("aria-expanded", "false");
-        mobileMenuBtn.querySelector("i").className = "fas fa-bars";
-        navLinks.inert = true;
-        if (returnFocus) {
-          mobileMenuBtn.focus();
-        }
-      }
-
-      // On load, make the collapsed menu inert so its links are not tabbable
-      if (isMobileView()) {
-        navLinks.inert = true;
-      }
-
-      mobileMenuBtn.addEventListener("click", function () {
-        const isExpanded = navLinks.classList.toggle("active");
-
-        // Update aria-expanded attribute
-        mobileMenuBtn.setAttribute("aria-expanded", isExpanded);
-
-        // Change icon based on state
-        mobileMenuBtn.querySelector("i").className = isExpanded
-          ? "fas fa-times"
-          : "fas fa-bars";
-
-        // Allow/prevent keyboard access to menu links
-        navLinks.inert = !isExpanded;
-        if (!isExpanded) {
-          mobileMenuBtn.focus();
-        }
-      });
-
-      // Close mobile menu when clicking on a link, returning focus to toggle
-      document.querySelectorAll(".nav-links a").forEach((link) => {
-        link.addEventListener("click", () => {
-          closeMobileMenu(true);
-=======
-      $("[scrub-each-word]").each(function (index) {
-        let tl = gsap.timeline({
-          scrollTrigger: {
-            trigger: $(this),
-            start: "top 90%",
-            end: "top center",
-            scrub: true
-          }
->>>>>>> e8adc75d674230d07e7ec4b82d8987d79aa5ac66
-        });
-<<<<<<< HEAD
-      });
-=======
-        tl.from($(this).find(".word"), { opacity: 0.2, duration: 0.2, ease: "power1.out", stagger: { each: 0.4 } });
-      });
->>>>>>> e8adc75d674230d07e7ec4b82d8987d79aa5ac66
-
-<<<<<<< HEAD
-      // Global keyboard shortcuts
-      document.addEventListener("keydown", function (e) {
-        // Press Escape to close mobile menu if it's open
-        if (e.key === "Escape" && navLinks.classList.contains("active")) {
-          closeMobileMenu(true);
-        }
-=======
-      // Avoid flash of unstyled content
-      gsap.set("[text-split]", { opacity: 1 });
+    $("[words-slide-up]").each(function (index) {
+      let tl = gsap.timeline({paused: true});
+      tl.from($(this).find(".word"), {opacity: 0, yPercent: 100, duration: 0.5, ease: "back.out(2)", stagger: {amount: 0.5}});
+      createScrollTrigger($(this), tl);
     });
-        const canvas = document.getElementById('matrixCanvas');
-        const ctx = canvas.getContext('2d');
->>>>>>> e8adc75d674230d07e7ec4b82d8987d79aa5ac66
 
-<<<<<<< HEAD
-        // Press 't' or 'T' to toggle theme, but only if not typing in an input
-        if (
-          (e.key === "t" || e.key === "T") &&
-          e.target.tagName !== "INPUT" &&
-          e.target.tagName !== "TEXTAREA"
-        ) {
-          toggleTheme();
+    $("[words-rotate-in]").each(function (index) {
+      let tl = gsap.timeline({paused: true});
+      tl.set($(this).find(".word"), {transformPerspective: 1000});
+      tl.from($(this).find(".word"), {rotationX: -90, duration: 0.6, ease: "power2.out", stagger: {amount: 0.6}});
+      createScrollTrigger($(this), tl);
+    });
+
+    $("[words-slide-from-right]").each(function (index) {
+      let tl = gsap.timeline({paused: true});
+      tl.from($(this).find(".word"), {opacity: 0, x: "1em", duration: 0.6, ease: "power2.out", stagger: {amount: 0.2}});
+      createScrollTrigger($(this), tl);
+    });
+
+    $("[letters-slide-up]").each(function (index) {
+      let tl = gsap.timeline({paused: true});
+      tl.from($(this).find(".char"), {yPercent: 100, duration: 0.2, ease: "power1.out", stagger: {amount: 0.6}});
+      createScrollTrigger($(this), tl);
+    });
+
+    $("[letters-slide-down]").each(function (index) {
+      let tl = gsap.timeline({paused: true});
+      tl.from($(this).find(".char"), {yPercent: -120, duration: 0.3, ease: "power1.out", stagger: {amount: 0.7}});
+      createScrollTrigger($(this), tl);
+    });
+
+    $("[letters-fade-in]").each(function (index) {
+      let tl = gsap.timeline({paused: true});
+      tl.from($(this).find(".char"), {opacity: 0, duration: 0.2, ease: "power1.out", stagger: {amount: 0.8}});
+      createScrollTrigger($(this), tl);
+    });
+
+    $("[letters-fade-in-random]").each(function (index) {
+      let tl = gsap.timeline({paused: true});
+      tl.from($(this).find(".char"), {opacity: 0, duration: 0.05, ease: "power1.out", stagger: {amount: 0.4, from: "random"}});
+      createScrollTrigger($(this), tl);
+    });
+
+    $("[scrub-each-word]").each(function (index) {
+      let tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: $(this),
+          start: "top 90%",
+          end: "top center",
+          scrub: true
         }
       });
-=======
-        let width = window.innerWidth;
-        let height = window.innerHeight;
-        canvas.width = width;
-        canvas.height = height;
->>>>>>> e8adc75d674230d07e7ec4b82d8987d79aa5ac66
+      tl.from($(this).find(".word"), {opacity: 0.2, duration: 0.2, ease: "power1.out", stagger: {each: 0.4}});
+    });
 
-<<<<<<< HEAD
-      // On resize, sync inert state with visibility (debounced)
-      let resizeTimer;
-      window.addEventListener("resize", function () {
-        clearTimeout(resizeTimer);
-        resizeTimer = setTimeout(function () {
-          if (!isMobileView()) {
-            navLinks.inert = false;
-          } else if (!navLinks.classList.contains("active")) {
-            navLinks.inert = true;
-          }
-        }, 150);
-      });
-=======
-        const fontSize = 18;
-        const columns = Math.floor(width / fontSize);
-        // Here's how to change the characters to Arabic letters-fade-in-random
-        // const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789~!@#$%^&*()_+=-`[]\{}|;\':",./<>?';
-        const characters = 'أبپتثجچحخدذرزژسشصضطظعغفقكلمنوهیئآئءؤ';
-        const drops = [];
->>>>>>> e8adc75d674230d07e7ec4b82d8987d79aa5ac66
+    // Avoid flash of unstyled content
+    gsap.set("[text-split]", {opacity: 1});
 
-<<<<<<< HEAD
-      // Header scroll effect
-      const header = document.getElementById("main-header");
-=======
-        class Drop {
-            constructor(x) {
-                this.x = x;
-                this.y = -fontSize * Math.random() * 10;
-                this.speed = gsap.utils.random(5, 15);
-                this.value = getRandomCharacter();
-                this.opacity = gsap.utils.random(0.2, 1);
-                this.color = `rgba(0, 255, 0, ${this.opacity})`;
-            }
->>>>>>> e8adc75d674230d07e7ec4b82d8987d79aa5ac66
 
-<<<<<<< HEAD
-      window.addEventListener("scroll", function () {
-        if (window.scrollY > 50) {
-          header.classList.add("scrolled");
-        } else {
-          header.classList.remove("scrolled");
-        }
-      });
+    const canvas = document.getElementById('matrixCanvas');
+    const ctx = canvas.getContext('2d');
 
-      // Parallax effect
-      const parallaxElements = document.querySelectorAll(".parallax-element");
+    let width = window.innerWidth;
+    let height = window.innerHeight;
+    canvas.width = width;
+    canvas.height = height;
 
-      window.addEventListener("scroll", function () {
-        const scrollPosition = window.pageYOffset;
+    const fontSize = 18;
+    const columns = Math.floor(width / fontSize);
+    // Here's how to change the characters to Arabic letters-fade-in-random
+    // const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789~!@#$%^&*()_+=-`[]\{}|;\':",./<>?';
+    const characters = 'أبپتثجچحخدذرزژسشصضطظعغفقكلمنوهیئآئءؤ';
+    const drops = [];
 
-        parallaxElements.forEach((element) => {
-          const speed = element.getAttribute("data-speed") || 0.5;
-          const yPos = -(scrollPosition * speed);
-          element.style.transform = `translateY(${yPos}px)`;
-        });
-      });
-
-      // Smooth scrolling for anchor links
-      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-        anchor.addEventListener("click", function (e) {
-          const targetId = this.getAttribute("href");
-          if (targetId === "#") {
-            e.preventDefault();
-
-            // Add micro-UX visual feedback to placeholder buttons
-            if (
-              this.classList.contains("btn") &&
-              !this.classList.contains("disabled")
-            ) {
-              const originalContent = this.innerHTML;
-              this.innerHTML =
-                '<i class="fas fa-spinner fa-spin" aria-hidden="true"></i> Processing...';
-              this.classList.add("disabled");
-
-              setTimeout(() => {
-                this.innerHTML = originalContent;
-                this.classList.remove("disabled");
-              }, 1000);
-=======
-            draw() {
-                ctx.fillStyle = this.color;
-                ctx.font = `${fontSize}px monospace`;
-                ctx.fillText(this.value, this.x, this.y);
->>>>>>> e8adc75d674230d07e7ec4b82d8987d79aa5ac66
-            }
-
-<<<<<<< HEAD
-            return;
-          }
-=======
-            update() {
-                this.y += this.speed;
-                this.opacity = gsap.utils.clamp(0, 1, 1 - (this.y / height));
-                this.color = `rgba(0, 255, 0, ${this.opacity})`;
-                this.value = Math.random() < 0.05 ? getRandomCharacter() : this.value; // Occasional character change
->>>>>>> e8adc75d674230d07e7ec4b82d8987d79aa5ac66
-
-<<<<<<< HEAD
-          e.preventDefault();
-
-          const targetElement = document.querySelector(targetId);
-
-          if (targetElement) {
-            window.scrollTo({
-              top: targetElement.offsetTop - 80, // Account for fixed header
-              behavior: "smooth",
-            });
-
-            // Set focus to the target element for accessibility
-            targetElement.setAttribute("tabindex", "-1");
-            targetElement.focus({preventScroll: true});
-
-            // Update URL hash without jumping
-            if (history.pushState) {
-              history.pushState(null, null, targetId);
-            } else {
-              window.location.hash = targetId;
-=======
-                if (this.y > height + fontSize) {
-                    this.y = -fontSize * gsap.utils.random(5, 20);
-                    this.speed = gsap.utils.random(1, 5);
-                    this.opacity = gsap.utils.random(0.2, .8);
-                    this.color = `rgba(0, 255, 0, ${this.opacity})`;
-                    this.value = getRandomCharacter();
-                }
->>>>>>> e8adc75d674230d07e7ec4b82d8987d79aa5ac66
-            }
-<<<<<<< HEAD
-          }
-        });
-      });
-=======
-        }
->>>>>>> e8adc75d674230d07e7ec4b82d8987d79aa5ac66
-
-<<<<<<< HEAD
-      // Theme toggle functionality
-      const themeToggle = document.getElementById("theme-toggle");
-      const themeIcon = themeToggle.querySelector("i");
-=======
-        function getRandomCharacter() {
-            return characters.charAt(Math.floor(Math.random() * characters.length));
-        }
->>>>>>> e8adc75d674230d07e7ec4b82d8987d79aa5ac66
-
-<<<<<<< HEAD
-      function toggleTheme() {
-        document.body.classList.toggle("light-theme");
-        const isLight = document.body.classList.contains("light-theme");
-
-        themeToggle.setAttribute("aria-pressed", isLight.toString());
-
-        if (isLight) {
-          themeIcon.classList.remove("fa-moon");
-          themeIcon.classList.add("fa-sun");
-          themeToggle.setAttribute(
-            "aria-label",
-            "Switch to dark mode (Press T)",
-          );
-          themeToggle.setAttribute("title", "Switch to dark mode (Press T)");
-        } else {
-          themeIcon.classList.remove("fa-sun");
-          themeIcon.classList.add("fa-moon");
-          themeToggle.setAttribute(
-            "aria-label",
-            "Switch to light mode (Press T)",
-          );
-          themeToggle.setAttribute("title", "Switch to light mode (Press T)");
-=======
-        for (let i = 0; i < columns; i++) {
-            drops.push(new Drop(i * fontSize));
->>>>>>> e8adc75d674230d07e7ec4b82d8987d79aa5ac66
-        }
+    class Drop {
+      constructor(x) {
+        this.x = x;
+        this.y = -fontSize * Math.random() * 10;
+        this.speed = gsap.utils.random(5, 15);
+        this.value = getRandomCharacter();
+        this.opacity = gsap.utils.random(0.2, 1);
+        this.color = `rgba(0, 255, 0, ${this.opacity})`;
       }
 
-<<<<<<< HEAD
-      themeToggle.addEventListener("click", toggleTheme);
-=======
-        function animate() {
-            ctx.fillStyle = 'rgba(0, 0, 0, 0.1)';
-            ctx.fillRect(0, 0, width, height);
->>>>>>> e8adc75d674230d07e7ec4b82d8987d79aa5ac66
+      draw() {
+        ctx.fillStyle = this.color;
+        ctx.font = `${fontSize}px monospace`;
+        ctx.fillText(this.value, this.x, this.y);
+      }
 
-<<<<<<< HEAD
-      // Add light theme styles dynamically
-      const lightThemeStyles = document.createElement("style");
-      lightThemeStyles.textContent = `
-                .light-theme {
-                    --dark-bg: #f0f4f8;
-                    --darker-bg: #e6eef5;
-                    --text-color: #333333;
-                    --text-secondary: #666666;
-                    --card-bg: rgba(255, 255, 255, 0.85);
-                }
-=======
-            drops.forEach(drop => {
-                drop.update();
-                drop.draw();
-            });
->>>>>>> e8adc75d674230d07e7ec4b82d8987d79aa5ac66
+      update() {
+        this.y += this.speed;
+        this.opacity = gsap.utils.clamp(0, 1, 1 - (this.y / height));
+        this.color = `rgba(0, 255, 0, ${this.opacity})`;
+        this.value = Math.random() < 0.05 ? getRandomCharacter() : this.value; // Occasional character change
 
-            requestAnimationFrame(animate);
+        if (this.y > height + fontSize) {
+          this.y = -fontSize * gsap.utils.random(5, 20);
+          this.speed = gsap.utils.random(1, 5);
+          this.opacity = gsap.utils.random(0.2, .8);
+          this.color = `rgba(0, 255, 0, ${this.opacity})`;
+          this.value = getRandomCharacter();
         }
+      }
+    }
 
-        window.addEventListener('resize', () => {
-            width = window.innerWidth;
-            height = window.innerHeight;
-            canvas.width = width;
-            canvas.height = height;
-            const newColumns = Math.floor(width / fontSize);
-            if (newColumns > columns) {
-                for (let i = columns; i < newColumns; i++) {
-                    drops.push(new Drop(i * fontSize));
-                }
-<<<<<<< HEAD
+    function getRandomCharacter() {
+      return characters.charAt(Math.floor(Math.random() * characters.length));
+    }
 
-                .light-theme .copyright {
-                    color: var(--text-secondary);
-                }
-            `;
-      document.head.appendChild(lightThemeStyles);
+    for (let i = 0; i < columns; i++) {
+      drops.push(new Drop(i * fontSize));
+    }
 
-      // Intersection Observer for animations
-      const observerOptions = {
-        threshold: 0.1,
-        rootMargin: "0px 0px -50px 0px",
-      };
+    function animate() {
+      ctx.fillStyle = 'rgba(0, 0, 0, 0.1)';
+      ctx.fillRect(0, 0, width, height);
 
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("animated");
-          }
-=======
-            } else if (newColumns < columns) {
-                drops.length = newColumns;
-            }
->>>>>>> e8adc75d674230d07e7ec4b82d8987d79aa5ac66
-        });
-      }, observerOptions);
-
-<<<<<<< HEAD
-      // Observe elements for animation
-      document.querySelectorAll(".section-content").forEach((el) => {
-        observer.observe(el);
+      drops.forEach(drop => {
+        drop.update();
+        drop.draw();
       });
 
-      // Add scroll-to-top functionality
-      const scrollToTopBtn = document.createElement("button");
-      scrollToTopBtn.innerHTML =
-        '<i class="fas fa-arrow-up" aria-hidden="true"></i>';
-      scrollToTopBtn.className = "theme-toggle";
-      scrollToTopBtn.id = "scroll-to-top";
-      scrollToTopBtn.setAttribute("aria-label", "Scroll to top");
-      scrollToTopBtn.setAttribute("title", "Scroll to top");
-      scrollToTopBtn.style.bottom = "8rem";
-      scrollToTopBtn.style.display = "none";
-      document.body.appendChild(scrollToTopBtn);
+      requestAnimationFrame(animate);
+    }
 
-      window.addEventListener("scroll", function () {
-        if (window.pageYOffset > 300) {
-          scrollToTopBtn.style.display = "flex";
-        } else {
-          scrollToTopBtn.style.display = "none";
+    window.addEventListener('resize', () => {
+      width = window.innerWidth;
+      height = window.innerHeight;
+      canvas.width = width;
+      canvas.height = height;
+      const newColumns = Math.floor(width / fontSize);
+      if (newColumns > columns) {
+        for (let i = columns; i < newColumns; i++) {
+          drops.push(new Drop(i * fontSize));
         }
-      });
-
-      scrollToTopBtn.addEventListener("click", function () {
-        window.scrollTo({
-          top: 0,
-          behavior: "smooth",
-        });
-
-        // Set focus back to logo for accessibility
-        const topLogo = document.querySelector(".logo");
-        if (topLogo) {
-          // Update URL hash without jumping
-          if (history.pushState) {
-            history.pushState(null, null, "#home");
-          } else {
-            window.location.hash = "#home";
-          }
-
-          // Small timeout to allow smooth scroll to start
-          setTimeout(() => {
-            topLogo.focus({preventScroll: true});
-          }, 50);
-        }
-      });
+      } else if (newColumns < columns) {
+        drops.length = newColumns;
+      }
     });
+
+
+    // Initial fade-in for the text and start animation
+    animate();
   </script>
-</body>
-=======
-        // Initial fade-in for the text and start animation
-        animate();
-    </script>
-</body>
+  </body>
 
 </html>
->>>>>>> e8adc75d674230d07e7ec4b82d8987d79aa5ac66
 
 </html>
