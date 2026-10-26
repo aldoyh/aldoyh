@@ -46,6 +46,7 @@
 > built an airplane while jumping of a cliff, when reached the ground it was a VAN! (AI Generated Plan)
 
 ### 💼 **Professional Journey**
+
 - 🤖 **Full Stack AI Prompter Engineer** (2023): ChatGPT | DALL-E | Stability.ai | Replicate | Certified OpenAI Engineer
 - 🔭 **Senior Broadcast Engineer** at [Bahrain TV](https://live.bh) since 2001
 - 🎬 **Virtual Director** of [VG55](https://www.youtube.com/channel/UCzXURHgFJuC0QpuFYOHRHeg)
@@ -57,12 +58,12 @@
 
 ## 🏗️ Featured Projects
 
-| Project | Description | Since | Status |
-|---------|-------------|-------|--------|
-| [**AlSarya TV Show**](https://alsarya.tv) | Interactive broadcast platform | 2019 | 🟢 Active |
-| [**VG55**](https://www.youtube.com/channel/UCzXURHgFJuC0QpuFYOHRHeg) | Virtual gaming and streaming channel | 2020 | 🟢 Active |
-| [**doy.tech Portfolio**](https://doy.tech) | Personal portfolio and services | 2021 | 🟢 Active |
-| [**Bahrain TV**](https://live.bh) | National television broadcasting | 2001 | 🟢 Active |
+| Project                                                              | Description                          | Since | Status    |
+| -------------------------------------------------------------------- | ------------------------------------ | ----- | --------- |
+| [**AlSarya TV Show**](https://alsarya.tv)                            | Interactive broadcast platform       | 2019  | 🟢 Active |
+| [**VG55**](https://www.youtube.com/channel/UCzXURHgFJuC0QpuFYOHRHeg) | Virtual gaming and streaming channel | 2020  | 🟢 Active |
+| [**doy.tech Portfolio**](https://doy.tech)                           | Personal portfolio and services      | 2021  | 🟢 Active |
+| [**Bahrain TV**](https://live.bh)                                    | National television broadcasting     | 2001  | 🟢 Active |
 
 <div align="center">
   <img src="images/DreamShaper_v7_by_Hasan_Aldoy_Mastermind.jpg" width="300" alt="AlSarya TV Show artwork"/>
@@ -157,7 +158,7 @@
 
 <img src="https://komarev.com/ghpvc/?username=aldoyh&label=Profile%20Views&color=B1002F&style=for-the-badge" alt="Profile views"/>
 
-### 🚀 *"Code is poetry, and every commit tells a story"*
+### 🚀 _"Code is poetry, and every commit tells a story"_
 
 <sub>⭐ Feel free to star any repositories you find interesting!</sub>
 
